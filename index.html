@@ -11,11 +11,25 @@
     <style>
         body{
             background-color: #3C3633;
+            display: flex;
+            flex-direction: column;
         }
+section{
+    box-sizing: border-box;
+}
 
+        header{
+            height: 80px;
+            width: 100vw;
+            border-bottom: #F3B95F 2px solid;
+           position: fixed;
+            display: flex;
+            overflow: hidden;
+            background-color: white;
+        }
         #d1>img{
-            height: 100px;
-            width: 100px;
+            height: 50px;
+            width: 50px;
             border-radius:100%;
             top: 10px;
             left: 30px;
@@ -23,17 +37,18 @@
             margin: auto;
             border: solid 10px #F3B95F;
         }
-        #d2>nav{
+        nav{
             height: 150px;
             width: 800px;
             top: 30px;
             right: 30px;
-
             position: fixed;
             margin: auto;
+            display: flex;
+            overflow: hidden;
         }
-        #d2>nav>a{
-            color: white;
+        nav>a{
+            color: black;
             font-weight: bolder;
             font-size: 20px;
         }
@@ -42,6 +57,7 @@
             height: 1050px;
             width: 100vw;
             background-color: #3C3633;
+            display: flex;
         }
 
 
@@ -52,7 +68,7 @@
             border: #F3B95F solid 13px;
             top: 220px;
             left: 150px;
-            position: absolute;
+            position: relative;
             margin: auto;
         }
         #Home>#d4{
@@ -108,6 +124,7 @@
             background-color: #747264;
             width: 100vw;
             height: 1050px;
+
         }
 
 
@@ -270,6 +287,75 @@
             height: 506px;
             width: 523px;
         }
+        #projects{
+            background-color: #747264;
+            width: 100vw;
+            height: 1050px;
+        }
+        #projects>#p2>h3{
+            position: absolute;
+            right:1000px;
+            top: 3250px;
+            font-size: 25px;
+            font-family: Serif;
+            color: #F3B95F;
+        }
+        #projects>#p2>h3:first-letter{
+            color: white;
+
+        }
+        #projects>#p2>hr{
+            position: absolute;
+            right:960px;
+            top: 3303px;
+            color: #F3B95F;
+            width: 223px;
+            height: 2px;
+        }
+        #projects>#p1>#i1{
+            position: absolute;
+            margin: auto;
+            top: 3397px;
+            height:297px ;
+            width: 430px;
+            left: 175px;
+        }
+        #projects>#p1>#i2{
+            position: absolute;
+            margin: auto;
+            top: 3397px;
+            height:297px ;
+            width: 430px;
+            left: 731px;
+        }
+        #projects>#p1>#i3{
+            position: absolute;
+            margin: auto;
+            top: 3397px;
+            height:297px ;
+            width: 430px;
+            left: 1282px;
+        }
+        #projects>#p3>#i4{
+            position: absolute;
+            margin: auto;
+            top: 3839px;
+            height:297px ;
+            width: 430px;
+            left: 474px;
+        }
+        #projects>#p3>#i5{
+            position: absolute;
+            margin: auto;
+            top: 3839px;
+            height:297px ;
+            width: 430px;
+            left: 1130px;
+        }
+
+        #projects>#p3>#ar1{
+
+        }
     </style>
 
 </head>
@@ -279,7 +365,7 @@
         <img src="assests/amasha-maduwanthi-high-resolution-logo%20(1).png"title="logo" alt="my logo"height="100px"width="100px">
     </div>
 
-    <div id="d2">
+
         <nav>
             <a href="">Home</a>
             <a href="#aboutme">About me</a>
@@ -289,7 +375,7 @@
             <a href="#Gallery">Gallery</a>
             <a href="#inquiries">Contact me</a>
         </nav>
-    </div>
+
 </header>
 
 <section id="Home">
@@ -368,23 +454,27 @@
     </div>
 </section>
 <section id="projects">
-<div>
+<div id="p2">
     <h3>My Projects</h3>
     <hr>
 </div>
-    <div>
-        <img src="assests/stock-photo-profile-side-view-of-his-he-nice-bearded-guy-wearing-checked-shirt-professional-expert-html-data-1451794139.jpg"title="projects"alt="projects"width="200px"height="200px">
-     <a href="">Projects</a>
-        <img src="assests/stock-photo-profile-side-view-of-his-he-nice-bearded-guy-wearing-checked-shirt-professional-expert-html-data-1451794139.jpg"title="projects"alt="projects"width="200px"height="200px">
-        <a href="">Projects</a>
-        <img src="assests/stock-photo-profile-side-view-of-his-he-nice-bearded-guy-wearing-checked-shirt-professional-expert-html-data-1451794139.jpg"title="projects"alt="projects"width="200px"height="200px">
-        <a href="">Projects</a>
+    <div id="p1">
+        <img id="i1" src="assests/stock-photo-profile-side-view-of-his-he-nice-bearded-guy-wearing-checked-shirt-professional-expert-html-data-1451794139.jpg"title="projects"alt="projects"width="200px"height="200px">
+     <a id="ar1" href="">Projects</a>
+        <img id="i2" src="assests/stock-photo-profile-side-view-of-his-he-nice-bearded-guy-wearing-checked-shirt-professional-expert-html-data-1451794139.jpg"title="projects"alt="projects"width="200px"height="200px">
+        <a id="ar2" href="">Projects</a>
+        <img id="i3" src="assests/stock-photo-profile-side-view-of-his-he-nice-bearded-guy-wearing-checked-shirt-professional-expert-html-data-1451794139.jpg"title="projects"alt="projects"width="200px"height="200px">
+        <a id="ar3" href="">Projects</a>
     </div>
-<div>
-    <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg"title="assignments"alt="assignment"width="200px"height="200px">
-    <a href="">Assignments</a>
-    <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg"title="assignments"alt="assignment"width="200px"height="200px">
-    <a href="">Assignments</a>
+<div id="p3">
+    <img id="i4" src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg"title="assignments"alt="assignment"width="200px"height="200px">
+    <a id="ar4" href="">Assignments</a>
+    <a id="ar5" href="">Assignments</a>
+    <a id="ar6" href="">Assignments</a>
+    <img  id="i5" src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg"title="assignments"alt="assignment"width="200px"height="200px">
+    <a id="ar7" href="">Assignments</a>
+    <a id="ar8" href="">Assignments</a>
+    <a id="ar9" href="">Assignments</a>
 </div>
 </section>
 
