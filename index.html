@@ -26,6 +26,7 @@ section{
             display: flex;
             overflow: hidden;
             background-color: white;
+            z-index: 2;
         }
         #d1>img{
             height: 50px;
@@ -356,6 +357,74 @@ section{
         #projects>#p3>#ar1{
 
         }
+        #Skills{
+            width: 100vw;
+            height: 1050px;
+        }
+        #Skills>#s1>h3{
+            position: absolute;
+            right:1000px;
+            top: 4300px;
+            font-size: 25px;
+            font-family: Serif;
+            color: #F3B95F;
+        }
+        #Skills>#s1>h3:first-letter{
+            color: white;
+
+        }
+        #Skills>#s1>hr{
+            position: absolute;
+            right:960px;
+            top: 4353px;
+            color: #F3B95F;
+            width: 223px;
+            height: 2px;
+        }
+        #Skills>#s2>p{
+            position: absolute;
+            right:960px;
+            top: 4425px;
+            color: white;
+            display: flex;
+            font-size: 50px;
+        }
+        #Skills>#s3>#im1{
+            position: absolute;
+           left: 185px;
+            top: 4900px;
+            height: 250px;
+            width: 250px;
+            border-radius: 30%;
+            border: solid 5px #F3B95F;
+        }
+        #Skills>#s3>#im2{
+            position: absolute;
+            left: 752px;
+            top: 4600px;
+            height: 250px;
+            width: 250px;
+            border-radius: 30%;
+            border: solid 5px #F3B95F;
+        }
+        #Skills>#s3>#im3{
+            position: absolute;
+            left: 1366px;
+            top: 4900px;
+            height: 250px;
+            width: 250px;
+            border-radius: 30%;
+            border: solid 5px #F3B95F;
+        }
+        #Skills>#s3>#im4{
+            position: absolute;
+           right: 150px;
+            top: 4600px;
+            height: 250px;
+            width: 250px;
+            border-radius: 30%;
+            border: solid 5px #F3B95F;
+        }
     </style>
 
 </head>
@@ -479,18 +548,18 @@ section{
 </section>
 
 <section id="Skills">
-    <div>
+    <div id="s1">
         <h3>My Skills</h3>
         <hr>
     </div>
-    <div>
+    <div id="s2">
         <p>Technologies I've worked</p>
     </div>
-  <div>
-      <img src="assests/Java_logo-414x700.png" title="" alt="" width="150px" height="150px">
-      <img src="assests/1499794875MySQL-logo-png-transparent.png" title="" alt="" width= "150px" height="150px">
-      <img src="assests/HTML_Color_Black.png" title="" alt="" width="150px" height="150px">
-      <img src="assests/icons8-css-filetype-50.png" title="" alt="" width="150px" height="150px">
+  <div id="s3">
+      <img id="im1" src="assests/Java_logo-414x700.png" title="" alt="" width="150px" height="150px">
+      <img id="im2" src="assests/1499794875MySQL-logo-png-transparent.png" title="" alt="" width= "150px" height="150px">
+      <img id="im3" src="assests/HTML_Color_Black.png" title="" alt="" width="150px" height="150px">
+      <img id="im4" src="assests/icons8-css-filetype-50.png" title="" alt="" width="150px" height="150px">
   </div>
 </section>
 
