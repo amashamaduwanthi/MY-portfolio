@@ -425,6 +425,175 @@ section{
             border-radius: 30%;
             border: solid 5px #F3B95F;
         }
+        #Gallery{
+            background-color: #747264;
+            width: 100vw;
+            height: 1050px;
+        }
+        #Gallery>#g1>h3{
+            position: absolute;
+            right:1000px;
+            top: 5316px;
+            font-size: 25px;
+            font-family: Serif;
+            color: #F3B95F;
+        }
+        #Gallery>#g1>h3:first-letter{
+            color: white;
+
+        }
+        #Gallery>#g1>hr{
+            position: absolute;
+            right:960px;
+            top: 5366px;
+            color: #F3B95F;
+            width: 176px;
+            height: 2px;
+        }
+        #Gallery>#g2>p{
+            position: absolute;
+            left: 150px;
+            top: 5410px;
+            color: white;
+            font-size: 20px;
+            background-color: #F3B95F;
+        }
+        #Gallery>#imageview{
+            background-color: yellow;
+            border: solid #F3B95F 15px;
+            width: 1000px;
+            height: 500px;
+            top: 5500px;
+
+            left: 50px;
+            position: absolute;
+            margin: auto;
+            overflow: hidden;
+        }
+        #imagesection>div{
+            width: 1000px;
+            height: 500px;
+            background-color: yellow;
+        }
+        #imagesection{
+            display: flex;
+            width: 4000px;
+            height: 500px;
+            animation-name: ani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        #imagesection>div:nth-child(1){
+            background-image: url("assests/WhatsApp Image 2024-02-11 at 08.15.01 (1).jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #imagesection>div:nth-child(2){
+            background-image: url("assests/WhatsApp Image 2024-02-11 at 08.15.01.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #imagesection>div:nth-child(3){
+            background-image: url("assests/WhatsApp Image 2024-02-11 at 08.15.02 (1).jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        #imagesection>div:nth-child(4){
+            background-image: url("assests/WhatsApp Image 2024-02-11 at 08.15.02.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @keyframes ani {
+            0%,20%{
+                transform: translate(0%);
+            }
+            25%,45%{
+                transform: translate(-25%);
+            }
+            50%,70%{
+                transform: translate(-50%);
+            }
+            75%,100%{
+                transform: translate(-75%);
+            }
+        }
+        #Gallery>#g3>p{
+            position: absolute;
+            right: 150px;
+            top: 5410px;
+            color: white;
+            font-size: 20px;
+            background-color: #F3B95F;
+        }
+        #Gallery>#imageview1{
+            background-color: yellow;
+            border: solid #F3B95F 15px;
+            width: 1000px;
+            height: 500px;
+            top: 5500px;
+
+            right: 50px;
+            position: absolute;
+            margin: auto;
+            overflow: hidden;
+        }
+        #imagesection1>div{
+            width: 1000px;
+            height: 500px;
+            background-color: yellow;
+        }
+        #imagesection1{
+            display: flex;
+            width: 4000px;
+            height: 500px;
+            animation-name: ani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        #imagesection1>div:nth-child(1){
+            background-image: url("assests/WhatsApp Image 2024-02-28 at 07.02.02.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #imagesection1>div:nth-child(2){
+            background-image: url("assests/WhatsApp Image 2024-02-28 at 07.02.03 (1).jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #imagesection1>div:nth-child(3){
+            background-image: url("assests/WhatsApp Image 2024-02-28 at 07.02.03.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        #imagesection1>div:nth-child(4){
+            background-image: url("assests/WhatsApp Image 2024-02-28 at 07.02.02.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @keyframes ani {
+            0%,20%{
+                transform: translate(0%);
+            }
+            25%,45%{
+                transform: translate(-25%);
+            }
+            50%,70%{
+                transform: translate(-50%);
+            }
+            75%,100%{
+                transform: translate(-75%);
+            }
+        }
     </style>
 
 </head>
@@ -564,23 +733,40 @@ section{
 </section>
 
 <section id="Gallery">
-    <div>
+    <div id="g1">
         <h3>Gallery</h3>
         <hr>
     </div>
-    <div> <p>GDSE 67 & 68 Innovesta Competition Award Ceramony</p></div>
-    <div>
-        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.01%20(1).jpeg" title="pic1" alt="picture1" width="350px" height="250px">
-        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.01.jpeg" title="pic2" alt="picture2" width="350px" height="250px">
-        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.02%20(1).jpeg" title="pic3" alt="picture3" width="350px" height="250px">
-        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.02.jpeg" title="pic1" alt="picture1" width="350px" height="250px">
+    <div id="g2"> <p>GDSE 67 & 68 Innovesta Competition Award Ceramony</p></div>
+    <div id="imageview">
+        <section id="imagesection">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
     </div>
-    <div><p>Fresher's night 2023 Enjoyable Moments</p></div>
-    <div>
-        <img src="assests/WhatsApp%20Image%202024-02-28%20at%2007.02.02.jpeg" title="pic1" alt="picture1" width="350px" height="250px">
-        <img src="assests/WhatsApp%20Image%202024-02-28%20at%2007.02.03%20(1).jpeg" title="pic1" alt="picture2" width="350px" height="250px">
-        <img src="assests/WhatsApp%20Image%202024-02-28%20at%2007.02.03.jpeg" title="pic1" alt="picture2" width="250px" height="250px">
+<!--    <div>-->
+<!--        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.01%20(1).jpeg" title="pic1" alt="picture1" width="350px" height="250px">-->
+<!--        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.01.jpeg" title="pic2" alt="picture2" width="350px" height="250px">-->
+<!--        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.02%20(1).jpeg" title="pic3" alt="picture3" width="350px" height="250px">-->
+<!--        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.02.jpeg" title="pic1" alt="picture1" width="350px" height="250px">-->
+<!--    </div>-->
+    <div id="g3"><p>Fresher's night 2023 Enjoyable Moments</p></div>
+    <div id="imageview1">
+        <section id="imagesection1">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
     </div>
+
+<!--    <div>-->
+<!--        <img src="assests/WhatsApp%20Image%202024-02-28%20at%2007.02.02.jpeg" title="pic1" alt="picture1" width="350px" height="250px">-->
+<!--        <img src="assests/WhatsApp%20Image%202024-02-28%20at%2007.02.03%20(1).jpeg" title="pic1" alt="picture2" width="350px" height="250px">-->
+<!--        <img src="assests/WhatsApp%20Image%202024-02-28%20at%2007.02.03.jpeg" title="pic1" alt="picture2" width="250px" height="250px">-->
+<!--    </div>-->
 </section>
 <section id="inquiries">
     <div>
