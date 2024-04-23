@@ -566,7 +566,7 @@ section{
                 gap: 8px;
             }
             #projects{
-                height: 820px;
+                height: 880px;
             }
         }
         #Skills{
@@ -640,7 +640,7 @@ section{
         }
         @media all and (max-width: 768px){
             #Skills{
-                height: 800px;
+                height: 880px;
             }
             #Skills>#s1>h3{
                 font-size: 20px;
@@ -726,7 +726,7 @@ section{
             position: absolute;
             margin: auto;
             overflow: hidden;
-            box-shadow: 5px 5px 20px black;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         }
         #imagesection>div{
             width: 1000px;
@@ -852,6 +852,84 @@ section{
             75%,100%{
                 transform: translate(-75%);
             }
+        }
+        @media all and (max-width: 768px){
+            #Gallery{
+                height: 880px;
+                width: 100vw;
+            }
+            #Gallery>#g1>h3{
+                font-size: 20px;
+                right: 304px;
+                top:4275px;
+            }
+
+            #Gallery > #imageview {
+                background-color: yellow;
+
+                width: 300px;
+                height: 300px;
+                top: 4450px;
+
+                left:10px;
+                position: absolute;
+                margin: auto;
+                overflow: hidden;
+            }
+            #imagesection>div{
+                width: 571px;
+                height: 400px;
+                background-color: yellow;
+            }
+            #imagesection {
+                display: flex;
+                width: 2640px;
+                height: 400px;
+                animation-name: ani;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+            #Gallery > #imageview1 {
+                background-color: yellow;
+
+                width: 300px;
+                height: 300px;
+                top: 4450px;
+                right:10px;
+                position: absolute;
+                margin: auto;
+                overflow: hidden;
+            }
+            #imagesection1>div{
+                width: 571px;
+                height: 400px;
+                background-color: yellow;
+            }
+            #imagesection1 {
+                display: flex;
+                width: 2640px;
+                height: 400px;
+                animation-name: ani;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+
+            #Gallery>#g1>hr{
+
+                right: 304px;
+                top:4320px;
+            }
+            #Gallery>#g2>p{
+                font-size: 12px;
+                left: 12px;
+                top:4380px;
+            }
+            #Gallery>#g3>p{
+                font-size: 12px;
+                right: 12px;
+                top:4380px;
+            }
+
         }
         #inquiries{
             width: 100vw;
