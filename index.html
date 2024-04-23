@@ -556,6 +556,19 @@ section{
 
             background-color: #212124;
         }
+        @media all and (max-width: 768px){
+            .box-container-projects{
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 8px;
+            }
+            .box-container-assignments{
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 8px;
+            }
+            #projects{
+                height: 820px;
+            }
+        }
         #Skills{
             width: 100vw;
             height: 1050px;
@@ -624,6 +637,49 @@ section{
             width: 250px;
             border-radius: 30%;
             border: solid 5px #F3B95F;
+        }
+        @media all and (max-width: 768px){
+            #Skills{
+                height: 800px;
+            }
+            #Skills>#s1>h3{
+                font-size: 20px;
+                right: 304px;
+                top:3354px;
+            }
+            #Skills>#s1>hr{
+                right: 243px;
+                top:3400px;
+            }
+            #Skills>#s2>p{
+                font-size: 25px;
+                right: 300px;
+                top: 3450px;
+            }
+            #Skills>#s3>#im1{
+                height: 125px;
+                width: 125px;
+                left: 50px;
+                top: 3590px;
+            }
+            #Skills>#s3>#im2{
+                height: 125px;
+                width: 125px;
+                left: 180px;
+                top: 3800px;
+            }
+            #Skills>#s3>#im3{
+                height: 125px;
+                width: 125px;
+                left: 350px;
+                top: 3590px;
+            }
+            #Skills>#s3>#im4{
+                height: 125px;
+                width: 125px;
+                left: 550px;
+                top: 3800px;
+            }
         }
         #Gallery{
             background-color: #747264;
@@ -1208,7 +1264,33 @@ section{
       <img id="im4" src="assests/icons8-css-filetype-50.png" title="" alt="" width="150px" height="150px">
   </div>
 </section>
-
+<!--<section id="Skills">-->
+<!--<div class="container">-->
+<!--    <h1 class="heading">Skills</h1>-->
+<!--    <div class="box-container">-->
+<!--        <div class="box">-->
+<!--            <img src="assests/Java_logo-414x700.png">-->
+<!--            <h3>HTML 5</h3>-->
+<!--            <a href="#" class="btn">read more</a>-->
+<!--        </div>-->
+<!--        <div class="box">-->
+<!--            <img src="assests/HTML_Color_Black.png">-->
+<!--            <h3>HTML 5</h3>-->
+<!--            <a href="#" class="btn">read more</a>-->
+<!--        </div>-->
+<!--        <div class="box">-->
+<!--            <img src="assests/1499794875MySQL-logo-png-transparent.png">-->
+<!--            <h3>HTML 5</h3>-->
+<!--            <a href="#" class="btn">read more</a>-->
+<!--        </div>-->
+<!--        <div class="box">-->
+<!--            <img src="assests/icons8-css-filetype-50.png">-->
+<!--            <h3>HTML 5</h3>-->
+<!--            <a href="#" class="btn">read more</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--    </section>-->
 <section id="Gallery">
     <div id="g1">
         <h3>Gallery</h3>
