@@ -8,20 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="assests/normalize.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <style>
         body{
             background-color: #3C3633;
-            display: flex;
-            flex-direction: column;
+
         }
-        section{
-    box-sizing: border-box;
-}
+
         header{
             height: 80px;
             width: 100vw;
             border-bottom: #F3B95F 2px solid;
-           position: fixed;
+            position: fixed;
             display: flex;
             overflow: hidden;
             background-color: white;
@@ -37,9 +39,14 @@
             margin: auto;
             border: solid 10px #F3B95F;
         }
-        nav{
+        #d2{
             height: 150px;
             width: 800px;
+            position: fixed;
+            margin: auto;
+        }
+       #d2> nav{
+
             top: 30px;
             right: 30px;
             position: fixed;
@@ -47,13 +54,82 @@
             word-spacing: 10px;
 
         }
-        nav>a{
+       #d2> nav>a{
             color: black;
             font-weight: bolder;
             font-size: 20px;
 
         }
+        .hamburger{
+            position: relative;
+            display: block;
+            width: 35px;
 
+            cursor: pointer;
+            appearance: none;
+            background: none;
+            outline: none;
+            border: none;
+            left: 363px;
+            top: 19px;
+        }
+        .hamburger .bar, .hamburger:after , .hamburger:before{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 5px;
+            background-color: white;
+            margin: 6px 0px;
+            transition: 0.4s;
+        }
+
+        .hamburger.is-active:before{
+            transform: rotate(-45deg)translate(-8px , 6px);
+        }
+        .hamburger.is-active:after{
+            transform: rotate(45deg)translate(-9px , -8px);
+        }
+        .hamburger.is-active.bar{
+            opacity: 0;
+        }
+
+        .mobile-nav{
+            position: fixed;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            min-height: 100vh;
+            z-index: 98;
+            display: block;
+            background-color: #12002F;
+            padding-top:120px ;
+            transition: 0.4s;
+        }
+
+        .mobile-nav > a {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto 16px;
+            text-align: center;
+            padding: 12px 16px;
+            background-color: #1f103F;
+            color: white;
+            text-decoration: none;
+        }
+        .mobile-nav a:hover{
+            background-color: #24104f;
+        }
+        .mobile-nav.is-active{
+            left: 0;
+        }
+
+        .mobile-nav{
+            display: none;
+        }
+        .hamburger{
+            display: none;
+        }
         /*section 01*/
         #Home{
             height: 1050px;
@@ -141,11 +217,11 @@
         /*media query*/
         @media all and (max-width: 768px){
             /*header*/
-            nav {
+           #d2> nav {
                 width: 510px;
                 height: 50px;
             }
-             nav > a {
+           #d2> nav > a {
                 font-size: 12px;
 
             }
@@ -155,9 +231,9 @@
                 height: 808px;
             }
             #Home > #d4 {
-               height: 100px;
+                height: 100px;
                 width: 300px;
-               font-size: 20px;
+                font-size: 20px;
                 right: 100px;
                 top: 230px;
             }
@@ -183,16 +259,26 @@
                 top:600px ;
             }
 
-
-
+            .mobile-nav{
+                display: none;
+            }
+            .hamburger{
+                display: none;
+            }
 
         }
         @media all and (max-width: 1440px)and (min-width: 1250px){
-            nav {
+            .mobile-nav{
+                display: none;
+            }
+            .hamburger{
+                display: none;
+            }
+         #d2>   nav {
                 width: 700px;
                 height: 150px;
             }
-            nav > a {
+          #d2>  nav > a {
                 font-size: 16px;
                 color: #747264;
 
@@ -231,6 +317,15 @@
             }
         }
         @media all and (max-width: 450px){
+            header{
+                background-color: black;
+            }
+            .mobile-nav{
+                display: block;
+            }
+            .hamburger{
+                display: block;
+            }
             #Home {
                 width: 100vw;
                 height: 808px;
@@ -284,7 +379,7 @@
             top: 1150px;
             font-size: 25px;
             font-family: Serif;
-           color: #F3B95F;
+            color: #F3B95F;
             box-shadow: 5px 5px 20px black;
         }
         #aboutme>#a1>h3:first-letter{
@@ -936,7 +1031,7 @@
         }
         #Skills>#s3>#im1{
             position: absolute;
-           left: 185px;
+            left: 185px;
             top: 4900px;
             height: 250px;
             width: 250px;
@@ -975,7 +1070,7 @@
         }
         #Skills>#s3>#im4{
             position: absolute;
-           right: 150px;
+            right: 150px;
             top: 4600px;
             height: 250px;
             width: 250px;
@@ -1495,7 +1590,7 @@
         }
         #inquiries>#c2>label{
             position: absolute;
-          font-size: 30px;
+            font-size: 30px;
             left: 500px;
             top: 6536px;
             font-weight: bolder;
@@ -1562,7 +1657,7 @@
         }
         @keyframes my-animation {
             from{
-               right: -20px;
+                right: -20px;
             }
             to{
                 right: 80px;
@@ -1584,6 +1679,7 @@
             width: 200px;
 
         }
+
         /*#inquiries > #c6 :hover{*/
         /*    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
         /*    transform: translateY(-0.25em);*/
@@ -1840,7 +1936,7 @@
         footer>#contactme>#div1>h2{
             position: absolute;
             left: 139px;
-           top: 7027px;
+            top: 7027px;
             font-size: 25px;
             font-family: Serif;
             color: #F3B95F;
@@ -1933,7 +2029,7 @@
             right:419px;
             top: 7100px;
             color: #F3B95F;
-           font-size: 20px;
+            font-size: 20px;
         }
         footer>#contactme>#tel>p{
             position: absolute;
@@ -1988,13 +2084,13 @@
         }
         @media all and (max-width: 768px){
             footer>#contactme>#div1>h2{
-            position: absolute;
-            left: 55px;
-            top: 6002px;
-            font-size: 20px;
-            font-family: Serif;
-            color: #F3B95F;
-        }
+                position: absolute;
+                left: 55px;
+                top: 6002px;
+                font-size: 20px;
+                font-family: Serif;
+                color: #F3B95F;
+            }
             footer>#contactme>#div1>hr{
                 position: absolute;
                 left: 19px;
@@ -2199,42 +2295,54 @@
         <img src="assests/amasha-maduwanthi-high-resolution-logo%20(1).png"title="logo" alt="my logo"height="100px"width="100px">
     </div>
 
-
-        <nav>
-            <a href="">Home</a>
-            <a href="#aboutme">Aboutme</a>
-            <a href="#Qualifications">Qualifications</a>
-            <a href="#projects">Projects</a>
-            <a href="#Skills">Skills</a>
-            <a href="#Gallery">Gallery</a>
-            <a href="#inquiries">Contactme</a>
-        </nav>
-
+<div id="d2">
+    <nav>
+        <a href="">Home</a>
+        <a href="#aboutme">Aboutme</a>
+        <a href="#Qualifications">Qualifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Gallery">Gallery</a>
+        <a href="#inquiries">Contactme</a>
+    </nav>
+    <button class="hamburger">
+        <div class="bar"></div>
+    </button>
+</div>
 </header>
+<nav class="mobile-nav">
+<a href="#">Home</a>
+<a href="#">Aboutme</a>
+<a href="#">Qualifications</a>
+<a href="#">Projects</a>
+<a href="#">Skills</a>
+<a href="#">Gallery</a>
+<a href="#">Contactme</a>
+</nav>
 
 <section id="Home">
     <br>
-    <div id="d3">
+    <div id="d3" class="animate__animated animate__bounce animate__fadeIn animate__infinite">
         <IMG src="assests/WhatsApp%20Image%202024-02-06%20at%2013.21.42.jpeg"title="my picture"alt="my pic"width="200px"height="200px">
     </div>
     <div id="d4">
         <h2>Hello</h2>
-        <h1>I'm Amasha Maduwanthi</h1>
-        <h4>A Fullstack Developer</h4>
+        <h1 >I'm Amasha Maduwanthi</h1>
+        <h4 class="animate__animated animate__bounce animate__infinite ">A Fullstack Developer</h4>
         <p>
             Software Engineering Student in IJSE
         </p>
     </div>
-<div id="d5">
-    <img src="assests/icons8-facebook-50.png"title="facebook"alt="facebook"id="img1">
-      <img src="assests/icons8-whatsapp-50.png"title="whatsapp"alt="whatsapp"id="img2">
-      <img src="assests/icons8-linked-in-50.png"title="linkedin"alt="linkedin"id="img3">
+    <div id="d5">
+        <img src="assests/icons8-facebook-50.png"title="facebook"alt="facebook"id="img1">
+        <img src="assests/icons8-whatsapp-50.png"title="whatsapp"alt="whatsapp"id="img2">
+        <img src="assests/icons8-linked-in-50.png"title="linkedin"alt="linkedin"id="img3">
 
 
 
 
 
-</div>
+    </div>
 </section>
 
 <section id="aboutme">
@@ -2248,17 +2356,17 @@
 
     </div>
     <div id="a6">
-        <IMG src="assests/WhatsApp%20Image%202024-02-06%20at%2013.21.42.jpeg"title="my picture"alt="my pic"width="200px"height="200px">
+        <IMG src="assests/WhatsApp%20Image%202024-02-06%20at%2013.21.42.jpeg"title="my picture"alt="my pic"width="200px"height="200px"class="animate__animated animate__bounce animate__infinite">
     </div>
-<div id="a3">
-    <ul>
-        <li>Live in      Malawenna,Thelwaththa</li>
-        <li>Home town Ambalangode</li>
-        <li>College G/PE.DE.S.Kularathna</li>
-    </ul>
-</div>
+    <div id="a3">
+        <ul>
+            <li>Live in      Malawenna,Thelwaththa</li>
+            <li>Home town Ambalangode</li>
+            <li>College G/PE.DE.S.Kularathna</li>
+        </ul>
+    </div>
     <br>
-    <div id="a4">
+    <div id="a4"data-aos="flip-left">
         <p>
             I am a passionate individual with a diverse range of interests and a curious mind. I have always been fascinated by  an interest  technology, art, literature, sports, . Whether I'm delving into the latest advancements in It, losing myself in a captivating novel, or exploring the great outdoors, I am constantly seeking out new experiences and opportunities for growth.I am committed to working diligently towards achieving it.
         </p>
@@ -2277,9 +2385,9 @@
     <div id="q6">
         <img src="assests/pngegg%20(1).png"TITLE="IJSE"alt="ilse"width="100px"height="100px">
     </div>
-<div id="q2">
- <img src="assests/WhatsApp%20Image%202024-02-27%20at%2007.39.13.jpeg"TITLE="IJSE"alt="ilse"width="100px"height="100px">
-</div>
+    <div id="q2">
+        <img src="assests/WhatsApp%20Image%202024-02-27%20at%2007.39.13.jpeg"TITLE="IJSE"alt="ilse"width="100px"height="100px">
+    </div>
     <div id="q3">
         <h3>Diploma In English</h3>
         <h4>ICBT CAMPUS GALLE 2022-2023</h4>
@@ -2294,7 +2402,7 @@
 </section>
 <section id="projects">
     <h2>Assignments</h2>
-    <div class="box-container box-container-assignments">
+    <div class="box-container box-container-assignments"data-aos="fade-right">
         <div class="box box-assignments">
             <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
             <a href="#Assignment-No-1">Assignment No.1</a><br>
@@ -2318,7 +2426,7 @@
         </div>
     </div>
     <h2>Projects</h2>
-    <div class="box-container box-container-projects">
+    <div class="box-container box-container-projects"data-aos="fade-left">
         <div class="box-project">
             <img src="assests/stock-photo-profile-side-view-of-his-he-nice-bearded-guy-wearing-checked-shirt-professional-expert-html-data-1451794139.jpg" alt="Project Ranweli" style="width: 100%; max-width: 300px;">
             <h3>Project</h3>
@@ -2343,12 +2451,12 @@
     <div id="s2">
         <p>Technologies I've worked</p>
     </div>
-  <div id="s3">
-      <img id="im1" src="assests/Java_logo-414x700.png" title="" alt="" width="150px" height="150px">
-      <img id="im2" src="assests/1499794875MySQL-logo-png-transparent.png" title="" alt="" width= "150px" height="150px">
-      <img id="im3" src="assests/HTML_Color_Black.png" title="" alt="" width="150px" height="150px">
-      <img id="im4" src="assests/icons8-css-filetype-50.png" title="" alt="" width="150px" height="150px">
-  </div>
+    <div id="s3">
+        <img id="im1" src="assests/Java_logo-414x700.png" title="" alt="" width="150px" height="150px" data-aos="flip-left">
+        <img id="im2" src="assests/1499794875MySQL-logo-png-transparent.png" title="" alt="" width= "150px" height="150px"data-aos="flip-left">
+        <img id="im3" src="assests/HTML_Color_Black.png" title="" alt="" width="150px" height="150px"data-aos="flip-right">
+        <img id="im4" src="assests/icons8-css-filetype-50.png" title="" alt="" width="150px" height="150px"data-aos="flip-right">
+    </div>
 </section>
 <!--<section id="Skills">-->
 <!--<div class="container">-->
@@ -2391,12 +2499,12 @@
             <div></div>
         </section>
     </div>
-<!--    <div>-->
-<!--        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.01%20(1).jpeg" title="pic1" alt="picture1" width="350px" height="250px">-->
-<!--        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.01.jpeg" title="pic2" alt="picture2" width="350px" height="250px">-->
-<!--        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.02%20(1).jpeg" title="pic3" alt="picture3" width="350px" height="250px">-->
-<!--        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.02.jpeg" title="pic1" alt="picture1" width="350px" height="250px">-->
-<!--    </div>-->
+    <!--    <div>-->
+    <!--        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.01%20(1).jpeg" title="pic1" alt="picture1" width="350px" height="250px">-->
+    <!--        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.01.jpeg" title="pic2" alt="picture2" width="350px" height="250px">-->
+    <!--        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.02%20(1).jpeg" title="pic3" alt="picture3" width="350px" height="250px">-->
+    <!--        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.02.jpeg" title="pic1" alt="picture1" width="350px" height="250px">-->
+    <!--    </div>-->
     <div id="g3"><p>Fresher's night 2023 Enjoyable Moments</p></div>
     <div id="imageview1">
         <section id="imagesection1">
@@ -2407,13 +2515,14 @@
         </section>
     </div>
 
-<!--    <div>-->
-<!--        <img src="assests/WhatsApp%20Image%202024-02-28%20at%2007.02.02.jpeg" title="pic1" alt="picture1" width="350px" height="250px">-->
-<!--        <img src="assests/WhatsApp%20Image%202024-02-28%20at%2007.02.03%20(1).jpeg" title="pic1" alt="picture2" width="350px" height="250px">-->
-<!--        <img src="assests/WhatsApp%20Image%202024-02-28%20at%2007.02.03.jpeg" title="pic1" alt="picture2" width="250px" height="250px">-->
-<!--    </div>-->
+    <!--    <div>-->
+    <!--        <img src="assests/WhatsApp%20Image%202024-02-28%20at%2007.02.02.jpeg" title="pic1" alt="picture1" width="350px" height="250px">-->
+    <!--        <img src="assests/WhatsApp%20Image%202024-02-28%20at%2007.02.03%20(1).jpeg" title="pic1" alt="picture2" width="350px" height="250px">-->
+    <!--        <img src="assests/WhatsApp%20Image%202024-02-28%20at%2007.02.03.jpeg" title="pic1" alt="picture2" width="250px" height="250px">-->
+    <!--    </div>-->
 </section>
 <section id="inquiries">
+
     <div id="c1">
         <h3>Contact me</h3>
         <hr>
@@ -2432,6 +2541,7 @@
         <label for="Email">Email</label>
         <input type="email"id="Email" placeholder="Email">
     </div>
+
     <br>
     <div id="c5">
         <button>Send</button>
@@ -2440,7 +2550,7 @@
 
     <br>
     <div id="c6">
-<!--        <img id="m1" src="assests/WhatsApp%20Image%202024-05-07%20at%2014.25.02.png" title="pic1" alt="picture1" width="500px" height="500px">-->
+        <!--        <img id="m1" src="assests/WhatsApp%20Image%202024-05-07%20at%2014.25.02.png" title="pic1" alt="picture1" width="500px" height="500px">-->
 
     </div>
 
@@ -2457,43 +2567,48 @@
             <img src="assests/icons8-facebook-50.png"title="facebook"alt="facebook">
             <a href="">Amasha Maduwanthi</a>
         </div >
-            <br>
+        <br>
         <div id="f2">
             <img src="assests/icons8-whatsapp-50.png"title="whatsapp"alt="whatsapp">
             <a href="">Amasha Maduwanthi</a>
         </div>
-            <br>
+        <br>
         <div id="f3">
             <img src="assests/icons8-linked-in-50.png"title="linkedin"alt="linkedin">
             <a href="">Amasha Maduwanthi</a>
         </div>
-            <br>
+        <br>
         <div id="f4">
             <img src="assests/icons8-github-50.png"title="github"alt="github">
             <a href="">amashamaduwanthi</a>
         </div>
 
 
-            <div id="contact1">
-                <h2>Contact Info</h2>
-                <hr>
-            </div>
-            <div id="tel">
-                <h5>Tel</h5><p>+94740150848</p>
-            </div>
+        <div id="contact1">
+            <h2>Contact Info</h2>
+            <hr>
+        </div>
+        <div id="tel">
+            <h5>Tel</h5><p>+94740150848</p>
+        </div>
         <div id="whatsapp">
-                <h5>Whatsapp</h5><p>+94740150848</p>
+            <h5>Whatsapp</h5><p>+94740150848</p>
         </div>
         <div id="Email2">
-                <h5>Email</h5><p>amashamaduwanthi123@gmail.com</p>
-            </div>
-            <div id="final">
-                <p>All Rights Reserved -2024 Developed by Amasha Maduwanthi</p>
+            <h5>Email</h5><p>amashamaduwanthi123@gmail.com</p>
+        </div>
+        <div id="final">
+            <p>All Rights Reserved -2024 Developed by Amasha Maduwanthi</p>
 
 
-            </div>
+        </div>
 
     </section>
 </footer>
+<script src="assests/js/Main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
