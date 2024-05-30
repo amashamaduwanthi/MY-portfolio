@@ -850,78 +850,40 @@
         }
 
 
-        /*#projects{*/
+        /*#assignments{*/
+        /*    height: auto;*/
+        /*    padding: 70px 9%;*/
         /*    background-color: #747264;*/
-        /*    width: 100vw;*/
-        /*    height: 1050px;*/
+        /*    text-align: center;*/
+        /*    justify-items: center;*/
         /*}*/
-        /*#projects>#p2>h3{*/
-        /*    position: absolute;*/
-        /*    right:1000px;*/
-        /*    top: 3250px;*/
-        /*    font-size: 25px;*/
-        /*    font-family: Serif;*/
-        /*    color: #F3B95F;*/
-        /*    box-shadow: 5px 5px 20px black;*/
+        /*.box-container-assignments{*/
+        /*    display: grid;*/
+        /*    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+        /*    gap: 15px;*/
         /*}*/
-        /*#projects>#p2>h3:first-letter{*/
-        /*    color: white;*/
-
+        /*.box-container-assignments>div{*/
+        /*    background: #fff;*/
+        /*    padding: 20px;*/
+        /*    text-align: center;*/
+        /*    border-radius: 10px;*/
+        /*    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);*/
         /*}*/
-        /*#projects>#p2>hr{*/
-        /*    position: absolute;*/
-        /*    right:960px;*/
-        /*    top: 3303px;*/
-        /*    color: #F3B95F;*/
-        /*    width: 223px;*/
-        /*    height: 2px;*/
+        /*.box-container-assignments>div:hover{*/
+        /*    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
+        /*    transform: translateY(-0.25em);*/
+        /*    border: 5px solid #F3B95F;*/
+        /*    background: #6C462D87;*/
         /*}*/
-        /*#projects>#p1>#i1{*/
-        /*    position: absolute;*/
-        /*    margin: auto;*/
-        /*    top: 3397px;*/
-        /*    height:297px ;*/
-        /*    width: 430px;*/
-        /*    left: 175px;*/
+        /*.box-container-assignments>div>a{*/
+        /*    color: #485460;*/
+        /*    cursor: pointer;*/
         /*}*/
-        /*#projects>#p1>#i2{*/
-        /*    position: absolute;*/
-        /*    margin: auto;*/
-        /*    top: 3397px;*/
-        /*    height:297px ;*/
-        /*    width: 430px;*/
-        /*    left: 731px;*/
-        /*}*/
-        /*#projects>#p1>#i3{*/
-        /*    position: absolute;*/
-        /*    margin: auto;*/
-        /*    top: 3397px;*/
-        /*    height:297px ;*/
-        /*    width: 430px;*/
-        /*    left: 1282px;*/
-        /*}*/
-        /*#projects>#p3>#i4{*/
-        /*    position: absolute;*/
-        /*    margin: auto;*/
-        /*    top: 3839px;*/
-        /*    height:297px ;*/
-        /*    width: 430px;*/
-        /*    left: 474px;*/
-        /*}*/
-        /*#projects>#p3>#i5{*/
-        /*    position: absolute;*/
-        /*    margin: auto;*/
-        /*    top: 3839px;*/
-        /*    height:297px ;*/
-        /*    width: 430px;*/
-        /*    left: 1130px;*/
-        /*}*/
-
-        /*#projects>#p3>#ar1{*/
-
+        /*.box-container-assignments>div>a:hover{*/
+        /*    color: black;*/
         /*}*/
         #projects{
-            height: 1050px;
+            height: 1134px;
             padding: 70px 9%;
             padding-bottom: 10%;
             font-family: "Poppins", sans-serif;
@@ -931,9 +893,9 @@
         }
         .box-container-assignments{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 
-            gap: 15px;
+            gap: 178px;
         }
         .box-container-assignments>div{
             background: #fff;
@@ -943,7 +905,14 @@
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 
             background-color: #212124;
+            height: 302px;
+            width: 270px;
         }
+        .box-container-assignments>div>button{
+            line-height: 1.1;
+            margin: 29px;
+            height: 32px;
+            width: 65px;}
         .box-container-assignments>div:hover{
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             transform: translateY(-0.25em);
@@ -954,7 +923,7 @@
         }
         .box-container-projects{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
         }
         .box-container-projects>div{
@@ -971,6 +940,8 @@
             transform: translateY(-0.25em);
             border: 5px solid #F3B95F;
         }
+
+
         @media all and (max-width: 768px){
             .box-container-projects{
                 grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -996,90 +967,121 @@
         }
 
 
-        #Skills{
-            width: 100vw;
-            height: 1050px;
+        /*#Skills{*/
+        /*    width: 100vw;*/
+        /*    height: 1050px;*/
+        /*}*/
+        /*#Skills>#s1>h3{*/
+        /*    position: absolute;*/
+        /*    right:1000px;*/
+        /*    top: 4300px;*/
+        /*    font-size: 25px;*/
+        /*    font-family: Serif;*/
+        /*    color: #F3B95F;*/
+        /*    box-shadow: 5px 5px 20px black;*/
+        /*}*/
+        /*#Skills>#s1>h3:first-letter{*/
+        /*    color: white;*/
+
+        /*}*/
+        /*#Skills>#s1>hr{*/
+        /*    position: absolute;*/
+        /*    right:960px;*/
+        /*    top: 4353px;*/
+        /*    color: #F3B95F;*/
+        /*    width: 223px;*/
+        /*    height: 2px;*/
+        /*}*/
+        /*#Skills>#s2>p{*/
+        /*    position: absolute;*/
+        /*    right:960px;*/
+        /*    top: 4425px;*/
+        /*    color: white;*/
+        /*    display: flex;*/
+        /*    font-size: 50px;*/
+        /*}*/
+        /*#Skills>#s3>#im1{*/
+        /*    position: absolute;*/
+        /*    left: 185px;*/
+        /*    top: 4900px;*/
+        /*    height: 250px;*/
+        /*    width: 250px;*/
+        /*    border-radius: 30%;*/
+        /*    border: solid 5px #F3B95F;*/
+        /*}*/
+        /*#Skills>#s3>#im1:hover{*/
+        /*    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
+        /*    transform: translateY(-0.25em);*/
+        /*}*/
+        /*#Skills>#s3>#im2{*/
+        /*    position: absolute;*/
+        /*    left: 752px;*/
+        /*    top: 4600px;*/
+        /*    height: 250px;*/
+        /*    width: 250px;*/
+        /*    border-radius: 30%;*/
+        /*    border: solid 5px #F3B95F;*/
+        /*}*/
+        /*#Skills>#s3>#im2:hover{*/
+        /*    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
+        /*    transform: translateY(-0.25em);*/
+        /*}*/
+        /*#Skills>#s3>#im3{*/
+        /*    position: absolute;*/
+        /*    left: 1366px;*/
+        /*    top: 4900px;*/
+        /*    height: 250px;*/
+        /*    width: 250px;*/
+        /*    border-radius: 30%;*/
+        /*    border: solid 5px #F3B95F;*/
+        /*}*/
+        /*#Skills>#s3>#im3:hover{*/
+        /*    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
+        /*    transform: translateY(-0.25em);*/
+        /*}*/
+        /*#Skills>#s3>#im4{*/
+        /*    position: absolute;*/
+        /*    right: 150px;*/
+        /*    top: 4600px;*/
+        /*    height: 250px;*/
+        /*    width: 250px;*/
+        /*    border-radius: 30%;*/
+        /*    border: solid 5px #F3B95F;*/
+        /*}*/
+        /*#Skills>#s3>#im4:hover{*/
+        /*    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
+        /*    transform: translateY(-0.25em);*/
+        /*}*/
+        #skills{
+            height: auto;
+            padding: 70px 9%;
+            text-align: center;
+            justify-items: center;
         }
-        #Skills>#s1>h3{
-            position: absolute;
-            right:1000px;
-            top: 4300px;
-            font-size: 25px;
-            font-family: Serif;
-            color: #F3B95F;
-            box-shadow: 5px 5px 20px black;
+        #skills .box-container-skills{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
         }
-        #Skills>#s1>h3:first-letter{
-            color: white;
+        .box-skills {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 0;
+            padding: 0;
+           border: #F3B95F 2px solid;
 
         }
-        #Skills>#s1>hr{
-            position: absolute;
-            right:960px;
-            top: 4353px;
-            color: #F3B95F;
-            width: 223px;
-            height: 2px;
+        .sub-box-skills {
+            padding: 41px;
+            text-align: center;
         }
-        #Skills>#s2>p{
-            position: absolute;
-            right:960px;
-            top: 4425px;
-            color: white;
-            display: flex;
-            font-size: 50px;
+        .sub-box-skills img {
+            width: 100px;
+            height: auto;
         }
-        #Skills>#s3>#im1{
-            position: absolute;
-            left: 185px;
-            top: 4900px;
-            height: 250px;
-            width: 250px;
-            border-radius: 30%;
-            border: solid 5px #F3B95F;
-        }
-        #Skills>#s3>#im1:hover{
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            transform: translateY(-0.25em);
-        }
-        #Skills>#s3>#im2{
-            position: absolute;
-            left: 752px;
-            top: 4600px;
-            height: 250px;
-            width: 250px;
-            border-radius: 30%;
-            border: solid 5px #F3B95F;
-        }
-        #Skills>#s3>#im2:hover{
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            transform: translateY(-0.25em);
-        }
-        #Skills>#s3>#im3{
-            position: absolute;
-            left: 1366px;
-            top: 4900px;
-            height: 250px;
-            width: 250px;
-            border-radius: 30%;
-            border: solid 5px #F3B95F;
-        }
-        #Skills>#s3>#im3:hover{
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            transform: translateY(-0.25em);
-        }
-        #Skills>#s3>#im4{
-            position: absolute;
-            right: 150px;
-            top: 4600px;
-            height: 250px;
-            width: 250px;
-            border-radius: 30%;
-            border: solid 5px #F3B95F;
-        }
-        #Skills>#s3>#im4:hover{
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            transform: translateY(-0.25em);
+        .sub-box-skills:hover{
+            transition: transform 0.5s ease-in;
+            transform: rotateY(180deg);
         }
         @media all and (max-width: 768px){
             #Skills{
@@ -1649,7 +1651,7 @@
             top: 6193px;
             height: 812px;
             width: 644px;
-            background-image: url("assests/WhatsApp Image 2024-05-07 at 14.25.02.png");
+
             animation-name: my-animation;
             animation-duration: 3s;
             background-repeat: no-repeat;
@@ -2301,7 +2303,7 @@
         <a href="#aboutme">Aboutme</a>
         <a href="#Qualifications">Qualifications</a>
         <a href="#projects">Projects</a>
-        <a href="#Skills">Skills</a>
+        <a href="#skills">Skills</a>
         <a href="#Gallery">Gallery</a>
         <a href="#inquiries">Contactme</a>
     </nav>
@@ -2406,25 +2408,90 @@
         <div class="box box-assignments">
             <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
             <a href="#Assignment-No-1">Assignment No.1</a><br>
-            <a href="#Assignment-No-2">Assignment No.2</a><br>
-            <a href="#Assignment-No-3">Assignment No.3</a><br>
-            <img src="assests/icons8-github-50.png" alt="Github" title="Github">
+
+<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
+            <button>Github</button>
+            <button>View</button>
         </div>
         <div class="box box-assignments">
             <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="ORM" style="width: 100%; max-width: 300px;"><br>
-            <a href="#Assignment-No-1">Assignment No.1</a><br>
             <a href="#Assignment-No-2">Assignment No.2</a><br>
-            <a href="#Assignment-No-3">Assignment No.3</a><br>
-            <img src="assests/icons8-github-50.png" alt="Github" title="Github">
+<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
+            <button>Github</button>
+            <button>View</button>
         </div>
         <div class="box box-assignments">
             <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
-            <a href="#Assignment-No-1">Assignment No.1</a><br>
-            <a href="#Assignment-No-2">Assignment No.2</a><br>
             <a href="#Assignment-No-3">Assignment No.3</a><br>
-            <img src="assests/icons8-github-50.png" alt="Github" title="Github">
+<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
+           <a href="https://github.com/amashamaduwanthi/CSS-Assingment03.git"><button>Github</button></a>
+            <button>View</button>
+        </div>
+        <div class="box box-assignments">
+            <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
+            <a href="#Assignment-No-4">Assignment No.4</a><br>
+
+           <a href="https://github.com/amashamaduwanthi/CSS-Assignment04.git"><button>Github</button></a>
+            <button>View</button>
+        </div>
+        <div class="box box-assignments">
+            <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
+            <a href="#Assignment-No-5">Assignment No.5</a><br>
+<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
+            <button>Github</button>
+            <button>View</button>
+        </div>
+        <div class="box box-assignments">
+            <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
+            <a href="#Assignment-No-6">Assignment No.6</a><br>
+<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
+            <a href="https://github.com/amashamaduwanthi/Internet-Technologies-Assignment06.git"><button>Github</button></a>
+            <button>View</button>
+        </div>
+        <div class="box box-assignments">
+            <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
+            <a href="#Assignment-No-6">Assignment No.7</a><br>
+<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
+            <button>Github</button>
+            <button>View</button>
+        </div>
+        <div class="box box-assignments">
+            <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
+            <a href="#Assignment-No-6">Assignment No.8</a><br>
+<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
+            <a href="https://github.com/amashamaduwanthi/Internet-Technologies-Assignment08.git"><button>Github</button></a>
+            <button>View</button>
+        </div>
+        <div class="box box-assignments">
+            <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
+            <a href="#Assignment-No-6">Assignment No.9</a><br>
+<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
+            <a href="https://github.com/amashamaduwanthi/Internet-Technologies-Assignment09.git"><button>Github</button></a>
+           <a href="assests/Assignment-Demo/Internet-Technologies-Assignment09/Index.html"><button>View</button></a>
+        </div>
+        <div class="box box-assignments">
+            <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
+            <a href="#Assignment-No-6">Assignment No.10</a><br>
+<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
+            <button>Github</button>
+            <button>View</button>
+        </div>
+        <div class="box box-assignments">
+            <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
+            <a href="#Assignment-No-6">Assignment No.11</a><br>
+<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
+            <button>Github</button>
+            <button>View</button>
+        </div>
+        <div class="box box-assignments">
+            <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
+            <a href="#Assignment-No-6">Assignment No.12</a><br>
+<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
+            <button>Github</button>
+            <a href="assests/Assignment-Demo/Calculator/index.html"><button>View</button></a>
         </div>
     </div>
+
     <h2>Projects</h2>
     <div class="box-container box-container-projects"data-aos="fade-left">
         <div class="box-project">
@@ -2443,19 +2510,57 @@
 
 </section>
 
-<section id="Skills">
-    <div id="s1">
-        <h3>My Skills</h3>
-        <hr>
-    </div>
-    <div id="s2">
-        <p>Technologies I've worked</p>
-    </div>
-    <div id="s3">
-        <img id="im1" src="assests/Java_logo-414x700.png" title="" alt="" width="150px" height="150px" data-aos="flip-left">
-        <img id="im2" src="assests/1499794875MySQL-logo-png-transparent.png" title="" alt="" width= "150px" height="150px"data-aos="flip-left">
-        <img id="im3" src="assests/HTML_Color_Black.png" title="" alt="" width="150px" height="150px"data-aos="flip-right">
-        <img id="im4" src="assests/icons8-css-filetype-50.png" title="" alt="" width="150px" height="150px"data-aos="flip-right">
+
+<!--<section id="Skills">-->
+<!--    <div id="s1">-->
+<!--        <h3>My Skills</h3>-->
+<!--        <hr>-->
+<!--    </div>-->
+<!--    <div id="s2">-->
+<!--        <p>Technologies I've worked</p>-->
+<!--    </div>-->
+<!--    <div id="s3">-->
+<!--        <img id="im1" src="assests/Java_logo-414x700.png" title="" alt="" width="150px" height="150px" data-aos="flip-left">-->
+<!--        <img id="im2" src="assests/1499794875MySQL-logo-png-transparent.png" title="" alt="" width= "150px" height="150px"data-aos="flip-left">-->
+<!--        <img id="im3" src="assests/HTML_Color_Black.png" title="" alt="" width="150px" height="150px"data-aos="flip-right">-->
+<!--        <img id="im4" src="assests/icons8-css-filetype-50.png" title="" alt="" width="150px" height="150px"data-aos="flip-right">-->
+<!--    </div>-->
+<!--</section>-->
+<section id="skills">
+
+    <h2>Skills</h2>
+    <div class="box-container box-container-skills hidden">
+        <div class="box box-skills">
+            <div class="sub-box sub-box-skills">
+                <img src="assests/angularjs.png" title="angular" alt="angular" loading="lazy">
+            </div>
+            <div class="sub-box sub-box-skills">
+                <img src="assests/bootstrap-framework-logo.png" title="boostrap" alt="boostrap" loading="lazy">
+            </div>
+            <div class="sub-box sub-box-skills">
+                <img src="assests/css.png" title="Css" alt="Css" loading="lazy">
+            </div>
+            <div class="sub-box sub-box-skills">
+                <img src="assests/figma.png" title="figma" alt="figma" loading="lazy">
+            </div>
+            <div class="sub-box sub-box-skills">
+                <img src="assests/html.png" title="Html" alt="Html" loading="lazy">
+            </div>
+            <div class="sub-box sub-box-skills">
+                <img src="assests/java.png" title="HTML" alt="HTML" loading="lazy">
+            </div>
+            <div class="sub-box sub-box-skills">
+                <img src="assests/javascript.png" title="CSS" alt="CSS" loading="lazy">
+            </div>
+            <div class="sub-box sub-box-skills">
+                <img src="assests/jquery.png" title="MySQL" alt="MySQL" loading="lazy">
+            </div>
+            <div class="sub-box sub-box-skills">
+                <img src="assests/mysql.png" title="mysql" alt="mysql" loading="lazy">
+            </div>
+
+        </div>
+
     </div>
 </section>
 <!--<section id="Skills">-->

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment09</title>
+    <link rel="stylesheet" href="Assests/normalize.css">
+    <style>
+        #head{
+            width: 1000px;
+            display: flex;
+            /*justify-content: center;*/
+            top: 400px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            margin: auto;
+        }
+        #head>div{
+            width: 120px;
+            height: 65px;
+            border:3px solid #FFFF;
+            text-align: center;
+            font-size: 30px;
+        }
+        #btn{
+            display: flex;
+            justify-content: center;
+        }
+        #btn>button{
+            width: 80px;
+            height: 40px;
+            margin-right: 10px;
+            margin-top: 20px;
+        }
+        .lighton{
+            background: red;
+            box-shadow: 0px 0px 50px red;";
+        }
+        .lighton2{
+            background: deeppink;
+            box-shadow: 0px 0px 50px deeppink;";
+        }
+       #h1{
+
+            color: red;
+
+        }
+        body{
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1 id="h1">JavaScript Knight Rider</h1>
+<div id="head">
+    <div class="light" id="d1"></div>
+    <div class="light" id="d2"></div>
+    <div class="light" id="d3"></div>
+    <div class="light" id="d4"></div>
+    <div class="light" id="d5"></div>
+    <div class="light" id="d6"></div>
+</div>
+<div id="btn">
+    <button id="btn-run">Run</button>
+    <button id="btn-stop">Stop</button>
+</div>
+
+<audio src="Assests/audio.mp3" id="audio"></audio>
+<script src="Assests/lib/jquery-3.7.1.min.js"></script>
+<script>
+
+    var count=0;
+    var array1=["#d90909","#d93232","#d66969","#ffffff","#ffffff","#ffffff"];
+
+
+    /*function set1(){
+        let lastValue=array1.pop();
+        array1.unshift(lastValue)
+
+        console.log(array1);
+       /!* $("#d1").css('background: yellow;',array1[1])*!/
+        $("#d1").css('background-color',array1[0]);
+        $("#d2").css('background-color',array1[1]);
+        $("#d3").css('background-color',array1[2]);
+        $("#d4").css('background-color',array1[3]);
+        $("#d5").css('background-color',array1[4]);
+        $("#d6").css('background-color',array1[5]);
+
+    }
+
+    $("#btn-run").on('click', () => {
+        myInterval=setInterval(set1,100);
+    })
+    $("#btn-stop").on('click', () => {
+        clearInterval(myInterval);
+    })*/
+    /------------------------------------------------/
+    var currentIndex=0;
+    var max_index=6;
+    var move="RIGHT";
+
+    function updateLignt(){
+        $(".light").removeClass("lighton");
+        $(".light").removeClass("lighton2");
+        $(".light").eq(currentIndex).addClass("lighton");
+
+        if(move === "RIGHT"){
+            if(currentIndex!==0) $(".light").eq(currentIndex-1).addClass("lighton2");
+
+            ++currentIndex;
+            if(currentIndex>max_index-2){
+                move="LEFT";
+            }
+        }else{
+            $(".light").eq(currentIndex+1).addClass("lighton2");
+
+            --currentIndex;
+            if(currentIndex===0){
+                move="RIGHT";
+            }
+        }
+
+
+    }
+    $("#btn-run").on('click', () => {
+        myInterval=setInterval(updateLignt,100);
+        $('#audio')[0].play()
+    })
+    $("#btn-stop").on('click', () => {
+        clearInterval(myInterval);
+        $('#audio')[0].pause()
+    })
+
+
+</script>
+
+</body>
+
+</html>
