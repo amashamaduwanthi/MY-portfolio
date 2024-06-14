@@ -891,6 +891,15 @@
             background-color: #747264;
             color: white;
         }
+        #projects>h2{
+            font-size: 25px;
+            font-family: Serif;
+            color: #F3B95F;
+
+        }
+        #projects>h2:first-letter{
+            color: white;
+        }
         .box-container-assignments{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -908,15 +917,20 @@
             height: 302px;
             width: 270px;
         }
-        .box-container-assignments>div>button{
+        .box-container-assignments>div>a>button{
             line-height: 1.1;
             margin: 29px;
             height: 32px;
             width: 65px;}
+        .box-container-assignments>div>a>button:hover{
+            background-color: #F3B95F;
+
+        }
         .box-container-assignments>div:hover{
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             transform: translateY(-0.25em);
             border: 5px solid #F3B95F;
+
         }
         .box-container-assignments>div>a{
             color: white;
@@ -928,7 +942,7 @@
         }
         .box-container-projects>div{
             background: #fff;
-            padding: 20px;
+            padding: 8px;
             text-align: center;
             border-radius: 10px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -953,6 +967,28 @@
             }
             #projects{
                 height: 880px;
+            }
+        }
+        @media all and (max-width: 1440px)and (min-width: 1250px) {
+            .box-container-assignments > div {
+                background: #fff;
+                background-color: rgb(255, 255, 255);
+                padding: 20px;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                background-color: #212124;
+                height: 259px;
+                width: 140px;
+            }
+            #projects {
+                height: 1193px;
+                padding: 10px 9%;
+                padding-bottom: 10px;
+                padding-bottom: 44%;
+                font-family: "Poppins", sans-serif;
+                background-color: #747264;
+                color: white;
             }
         }
         @media (max-width: 450px){
@@ -1052,23 +1088,39 @@
         /*    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
         /*    transform: translateY(-0.25em);*/
         /*}*/
-        #skills{
+        #skills {
             height: auto;
-            padding: 70px 9%;
+            padding: 120px 9%;
             text-align: center;
             justify-items: center;
+        }
+        #skills>h2{
+            font-size: 25px;
+            font-family: Serif;
+            color: #F3B95F;
+
+
+        }
+        #skills>h2:first-letter{
+            color: white;
         }
         #skills .box-container-skills{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 15px;
+            /*background: white;*/
+            border-radius: 20px;
+            border: #F3B95F 5px solid;
+        }
+        #skills .box-container-skills:hover{
+            background-color: gray;
         }
         .box-skills {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-gap: 0;
             padding: 0;
-           border: #F3B95F 2px solid;
+
 
         }
         .sub-box-skills {
@@ -1467,10 +1519,13 @@
 
         }
         @media all and (max-width: 1440px)and (min-width: 1250px) {
+            #Gallery{
+                height: 826px;
+            }
             #Gallery > #g1 > h3 {
                 position: absolute;
                 right: 653px;
-                top: 5230px;
+                top: 5447px;
                 font-size: 25px;
                 font-family: Serif;
                 color: #F3B95F;
@@ -1479,7 +1534,7 @@
             #Gallery > #g1 > hr {
                 position: absolute;
                 right: 610px;
-                top: 5292px;
+                top: 5520px;
                 color: #F3B95F;
                 width: 176px;
                 height: 2px;
@@ -1487,7 +1542,7 @@
             #Gallery > #g2 > p {
                 position: absolute;
                 left: 42px;
-                top: 5340px;
+                top: 5532px;
                 color: white;
                 font-size: 17px;
                 background-color: #F3B95F;
@@ -1497,14 +1552,14 @@
                 border: solid #F3B95F 15px;
                 width: 620px;
                 height: 346px;
-                top: 5500px;
+                top: 5601px;
                 right: 50px;
 
             }
             #Gallery > #g3 > p {
                 position: absolute;
                 right: 206px;
-                top: 5339px;
+                top: 5532px;
                 color: white;
                 font-size: 17px;
                 background-color: #F3B95F;
@@ -1519,7 +1574,7 @@
             #Gallery > #imageview {
                 width: 620px;
                 height: 346px;
-                top: 5500px;
+                top: 5601px;
                 right: 681px;
             }
         }
@@ -1563,7 +1618,7 @@
         #inquiries>#c1>h3{
             position: absolute;
             right:1000px;
-            top: 6381px;
+            top: 6283px;
             font-size: 25px;
             font-family: Serif;
             color: #F3B95F;
@@ -1576,7 +1631,7 @@
         #inquiries>#c1>hr{
             position: absolute;
             right:992px;
-            top: 6446px;
+            top: 6341px;
             color: #F3B95F;
             width: 176px;
             height: 2px;
@@ -1586,7 +1641,7 @@
             width: 400px;
             height: 42px;
             right: 995px;
-            top: 6536px;
+            top: 6454px;
             border-radius: 30px;
             border: solid 3px #F3B95F;
         }
@@ -1594,7 +1649,7 @@
             position: absolute;
             font-size: 30px;
             left: 500px;
-            top: 6536px;
+            top: 6454px;
             font-weight: bolder;
             color: white;
         }
@@ -1603,7 +1658,7 @@
             width: 400px;
             height: 42px;
             right: 995px;
-            top: 6625px;
+            top: 6556px;
             border-radius: 30px;
             border: solid 3px #F3B95F;
         }
@@ -1611,7 +1666,7 @@
             position: absolute;
             font-size: 30px;
             left: 500px;
-            top: 6625px;
+            top: 6556px;
             font-weight: bolder;
             color: white;
         }
@@ -1620,7 +1675,7 @@
             width: 400px;
             height: 42px;
             right: 995px;
-            top: 6727px;
+            top: 6670px;
             border-radius: 30px;
             border: solid 3px #F3B95F;
         }
@@ -1628,7 +1683,7 @@
             position: absolute;
             font-size: 30px;
             left: 500px;
-            top: 6727px;
+            top: 6670px;
             font-weight: bolder;
             color: white;
         }
@@ -1636,7 +1691,7 @@
             position: absolute;
             font-size: 20px;
             left: 600px;
-            top: 6857px;
+            top: 6757px;
             font-weight: bolder;
             color: white;
             height: 50px;
@@ -1651,7 +1706,7 @@
             top: 6193px;
             height: 812px;
             width: 644px;
-
+           background-image: url("assests/WhatsApp Image 2024-05-07 at 14.25.02.png");
             animation-name: my-animation;
             animation-duration: 3s;
             background-repeat: no-repeat;
@@ -1932,361 +1987,111 @@
             }
 
         }
+
+
         footer{
-            height: 500px;
-        }
-        footer>#contactme>#div1>h2{
             position: absolute;
-            left: 139px;
-            top: 7027px;
-            font-size: 25px;
-            font-family: Serif;
-            color: #F3B95F;
+            width: 95%;
+            background: rgb(187, 145, 102);
+            min-height: 100px;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
-        footer>#contactme>#div1>h2:first-letter{
+        footer>.social_icons{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            bottom: 95px;
+        }
+        footer>.social_menu{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        footer>.social_icons>li,footer>.social_menu>li{
+            list-style: none;
+        }
+        footer>.social_icons>li>a,footer>.social_menu>li>a{
+            font-size: 2em;
             color: white;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
         }
-        footer>#contactme>#div1>hr{
-            position: absolute;
-            left:107px;
-            top: 7077px;
-            color: #F3B95F;
-            width: 176px;
-            height: 2px;
-
+        footer>.social_icons>li>a:hover{
+            transform: translate(-10px);
         }
-        footer>#contactme>#f1>img{
-            position: absolute;
-            left:128px;
-            top: 7113px;
-        }
-        footer>#contactme>#f1>a{
-            position: absolute;
-            left:234px;
-            top: 7128px;
-            color: #F3B95F;
-            cursor: pointer;
-
-        }
-        footer>#contactme>#f2>img{
-            position: absolute;
-            left:128px;
-            top: 7195px;
-        }
-        footer>#contactme>#f2>a{
-            position: absolute;
-            left:234px;
-            top: 7200px;
-            color: #F3B95F;
-            cursor: pointer;
-
-        }
-        footer>#contactme>#f3>img{
-            position: absolute;
-            left:128px;
-            top: 7272px;
-        }
-        footer>#contactme>#f3>a{
-            position: absolute;
-            left:234px;
-            top: 7276px;
-            color: #F3B95F;
-            cursor: pointer;
-
-        }
-        footer>#contactme>#f4>img{
-            position: absolute;
-            left:128px;
-            top: 7357px;
-        }
-        footer>#contactme>#f4>a{
-            position: absolute;
-            left:234px;
-            top: 7362px;
-            color: #F3B95F;
-            cursor: pointer;
-
-        }
-        footer>#contactme>#contact1>h2{
-            position: absolute;
-            right: 245px;
-            top: 7027px;
-            font-size: 25px;
-            font-family: Serif;
-            color: #F3B95F;
-        }
-        footer>#contactme>#contact1>h2:first-letter{
+        footer>.social_menu>li>a{
+            font-size: 1.2em;
             color: white;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+            text-decoration: none;
         }
-        footer>#contactme>#contact1>hr{
+        footer>.social_menu>li>a:hover{
+            opacity: 1;
+        }
+        footer>p{
+            color: #ffffff;
+            text-align: center;
+            margin-top: 85px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        footer >.waves>.wave{
             position: absolute;
-            right:240px;
-            top: 7077px;
-            color: #F3B95F;
-            width: 176px;
-            height: 2px;
-        }
-        footer>#contactme>#tel>h5{
-            position: absolute;
-            right:419px;
-            top: 7100px;
-            color: #F3B95F;
-            font-size: 20px;
-        }
-        footer>#contactme>#tel>p{
-            position: absolute;
-            right:135px;
-            top: 7113px;
-            color: white;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        footer>#contactme>#whatsapp>h5{
-            position: absolute;
-            right:369px;
-            top: 7180px;
-            color: #F3B95F;
-            font-size: 20px;
-        }
-        footer>#contactme>#whatsapp>p{
-            position: absolute;
-            right:135px;
-            top: 7193px;
-            color: white;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        footer>#contactme>#Email2>h5{
-            position: absolute;
-            right:399px;
-            top: 7246px;
-            color: #F3B95F;
-            font-size: 20px;
-        }
-        footer>#contactme>#Email2>p{
-            position: absolute;
-            right:10px;
-            top: 7259px;
-            color: white;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        footer>#contactme>#final>p{
-            position: absolute;
-            padding: 0;
-            margin: auto;
-            color: white;
-            font-size: 30px;
-            font-style: italic;
-            font-weight: bolder;
-            font-family: sans-serif;
-            top: 7437px;
-            left: 450px;
+            top:-100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("wave .png");
+            background-size: 1000px 100px;
 
         }
-        @media all and (max-width: 768px){
-            footer>#contactme>#div1>h2{
-                position: absolute;
-                left: 55px;
-                top: 6002px;
-                font-size: 20px;
-                font-family: Serif;
-                color: #F3B95F;
-            }
-            footer>#contactme>#div1>hr{
-                position: absolute;
-                left: 19px;
-                top: 6046px;
-                color: #F3B95F;
-                width: 176px;
-                height: 2px;
+        footer>.waves>#wave1{
+            z-index: 1000;
+            opacity: 0.5;
+            bottom: 10px;
+            animation: animateWave 4s linear infinite;
+            width: 2140px;
+        }
+        footer>.waves>#wave2{
+            z-index: 999;
+            opacity: 1;
+            bottom: 0;
+            animation: animateWave2 4s linear infinite;
+            width: 2140px;
+        }
 
-            }
-            footer>#contactme>#f1>img{
-                position: absolute;
-                left: 43px;
-                top: 6101px;
-            }
-            footer>#contactme>#f1>a{
-                left: 131px;
-                top: 6112px;
-            }
-            footer>#contactme>#f2>img{
-                left: 42px;
-                top: 6177px;
-            }
-            footer>#contactme>#f2>a{
-                left: 126px;
-                top: 6188px;
-            }
-            footer>#contactme>#f3>img{
-                left: 43px;
-                top: 6262px;
-            }
-            footer>#contactme>#f3>a {
-                left: 125px;
-                top: 6274px;
-            }
-            footer>#contactme>#f4>img {
-                left: 41px;
-                top: 6358px;
-            }
-            footer>#contactme>#f4>a {
-                left: 125px;
-                top: 6370px;
-            }
-            footer>#contactme>#contact1>h2{
-                position: absolute;
-                right: 163px;
-                top: 5982px;
-                font-size: 20px;
-                font-family: Serif;
-                color: #F3B95F;
-            }
-            footer>#contactme>#contact1>hr {
-                right: 149px;
-                top: 6035px;
-            }
-            footer>#contactme>#tel>h5{
-                right: 325px;
-                top: 6071px;
-                color: #F3B95F;
-                font-size: 17px;
-            }
-            footer>#contactme>#tel>p{
-                position: absolute;
-                right: 135px;
-                top: 6082px;
-                color: white;
-                font-size: 16px;
 
+        @keyframes animateWave {
+            0%{
+                background-position-x: 1000px;
             }
-            footer>#contactme>#whatsapp>h5{
-                right: 302px;
-                top: 6138px;
-                color: #F3B95F;
-                font-size: 17px;
-
-            }
-            footer>#contactme>#whatsapp>p{
-                position: absolute;
-                right: 135px;
-                top: 6152px;
-                color: white;
-                font-size: 16px;
-
-            }
-            footer>#contactme>#Email2>h5{
-                right: 326px;
-                top: 6224px;
-                color: #F3B95F;
-                font-size: 17px;
-
-            }
-
-            footer>#contactme>#Email2>p{
-                right: 10px;
-                top: 6236px;
-                color: white;
-                font-size: 16px;
-
-            }
-            footer>#contactme>#final>p{
-                position: absolute;
-                padding: 0;
-                margin: auto;
-                color: white;
-                font-size: 12px;
-                font-style: italic;
-                font-weight: bolder;
-                font-family: sans-serif;
-                top: 6424px;
-                left: 182px;
-
+            100%{
+                background-position-x: 0px;
             }
         }
-        @media all and (max-width: 1440px)and (min-width: 1250px) {
-            footer > #contactme > #final > p {
-
-                font-size: 25px;
-                top: 7437px;
-                left: 191px;
+        @keyframes animateWave2 {
+            0%{
+                background-position-x: 0px;
+            }
+            100%{
+                background-position-x: 1000px;
             }
         }
-        @media all and (max-width: 450px) {
-            footer {
-                height: 861px;
-            }
 
-            footer > #contactme > #contact1 > h2 {
-                position: absolute;
-                right: 261px;
-                top: 6433px;
-                font-size: 20px;
-                font-family: Serif;
-                color: #F3B95F;
-            }
 
-            footer > #contactme > #contact1 > hr {
-                right: 237px;
-                top: 6474px;
-            }
-
-            footer > #contactme > #tel > h5 {
-                right: 325px;
-                top: 6495px;
-                color: #F3B95F;
-                font-size: 17px;
-            }
-
-            footer > #contactme > #tel > p {
-                position: absolute;
-                right: 135px;
-                top: 6509px;
-                color: white;
-                font-size: 16px;
-            }
-
-            footer > #contactme > #whatsapp > h5 {
-                right: 302px;
-                top: 6542px;
-                color: #F3B95F;
-                font-size: 17px;
-            }
-
-            footer > #contactme > #whatsapp > p {
-                position: absolute;
-                right: 135px;
-                top: 6558px;
-                color: white;
-                font-size: 16px;
-            }
-            footer > #contactme > #Email2 > h5 {
-                right: 311px;
-                top: 6597px;
-                color: #F3B95F;
-                font-size: 17px;
-            }
-            footer > #contactme > #Email2 > p {
-                right: 17px;
-                top: 6611px;
-                color: white;
-                font-size: 15px;
-            }
-            footer > #contactme > #final > p {
-                position: absolute;
-                padding: 0;
-                margin: auto;
-                color: white;
-                font-size: 12px;
-                font-style: italic;
-                font-weight: bolder;
-                font-family: sans-serif;
-                top: 6691px;
-                left: 20px;
-            }
-
-        }
 
     </style>
 
@@ -2359,6 +2164,7 @@
     </div>
     <div id="a6">
         <IMG src="assests/WhatsApp%20Image%202024-02-06%20at%2013.21.42.jpeg"title="my picture"alt="my pic"width="200px"height="200px"class="animate__animated animate__bounce animate__infinite">
+
     </div>
     <div id="a3">
         <ul>
@@ -2407,86 +2213,87 @@
     <div class="box-container box-container-assignments"data-aos="fade-right">
         <div class="box box-assignments">
             <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
-            <a href="#Assignment-No-1">Assignment No.1</a><br>
+            <h2>Assignment 01</h2>
 
-<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
-            <button>Github</button>
+
+            <a href="https://github.com/amashamaduwanthi/MY-portfolio.git"><button>Github</button></a>
             <button>View</button>
         </div>
         <div class="box box-assignments">
             <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="ORM" style="width: 100%; max-width: 300px;"><br>
-            <a href="#Assignment-No-2">Assignment No.2</a><br>
+            <h2>Assignment 02</h2>
 <!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
-            <button>Github</button>
+            <a href="https://github.com/amashamaduwanthi/MY-portfolio.git"><button>Github</button></a>
             <button>View</button>
         </div>
         <div class="box box-assignments">
             <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
-            <a href="#Assignment-No-3">Assignment No.3</a><br>
-<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
+            <h2>Assignment 03</h2>
+
            <a href="https://github.com/amashamaduwanthi/CSS-Assingment03.git"><button>Github</button></a>
-            <button>View</button>
+            <a href="https://amashamaduwanthi.github.io/CSS-Assingment03/"><button>View</button></a>
         </div>
         <div class="box box-assignments">
             <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
-            <a href="#Assignment-No-4">Assignment No.4</a><br>
+            <h2>Assignment 04</h2>
 
            <a href="https://github.com/amashamaduwanthi/CSS-Assignment04.git"><button>Github</button></a>
-            <button>View</button>
+           <a href="https://amashamaduwanthi.github.io/CSS-Assignment04/"><button>View</button></a>
         </div>
         <div class="box box-assignments">
             <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
-            <a href="#Assignment-No-5">Assignment No.5</a><br>
-<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
-            <button>Github</button>
-            <button>View</button>
+            <h2>Assignment 05</h2>
+
+            <a href="https://github.com/amashamaduwanthi/MY-portfolio.git"><button>Github</button></a>
+            <a href="https://amashamaduwanthi.github.io/MY-portfolio/"><button>View</button></a>
         </div>
         <div class="box box-assignments">
             <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
-            <a href="#Assignment-No-6">Assignment No.6</a><br>
-<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
+            <h2>Assignment 06</h2>
+
             <a href="https://github.com/amashamaduwanthi/Internet-Technologies-Assignment06.git"><button>Github</button></a>
-            <button>View</button>
+           <a href="https://amashamaduwanthi.github.io/Internet-Technologies-Assignment06/"><button>View</button></a>
         </div>
         <div class="box box-assignments">
             <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
-            <a href="#Assignment-No-6">Assignment No.7</a><br>
-<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
-            <button>Github</button>
-            <button>View</button>
+            <h2>Assignment 07</h2>
+
+            <a href="https://github.com/amashamaduwanthi/Internet-Technologies-Assignment06.git"><button>Github</button></a>
+            <a href="https://amashamaduwanthi.github.io/Internet-Technologies-Assignment06/"><button>View</button></a>
         </div>
         <div class="box box-assignments">
             <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
-            <a href="#Assignment-No-6">Assignment No.8</a><br>
-<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
+            <h2>Assignment 08</h2>
+
             <a href="https://github.com/amashamaduwanthi/Internet-Technologies-Assignment08.git"><button>Github</button></a>
-            <button>View</button>
+            <a href="assests/Assignment-Demo/Internet-Technologies-Assignment08/index.html"></a><button>View</button>
         </div>
         <div class="box box-assignments">
             <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
-            <a href="#Assignment-No-6">Assignment No.9</a><br>
-<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
+            <h2>Assignment 09</h2>
+
             <a href="https://github.com/amashamaduwanthi/Internet-Technologies-Assignment09.git"><button>Github</button></a>
            <a href="assests/Assignment-Demo/Internet-Technologies-Assignment09/Index.html"><button>View</button></a>
         </div>
         <div class="box box-assignments">
             <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
-            <a href="#Assignment-No-6">Assignment No.10</a><br>
-<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
-            <button>Github</button>
-            <button>View</button>
+            <h2>Assignment 10</h2>
+
+           <a href="https://github.com/amashamaduwanthi/Calculator.git"><button>Github</button></a>
+            <a href="assests/Assignment-Demo/Calculator/index.html"><button>View</button></a>
         </div>
         <div class="box box-assignments">
             <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
-            <a href="#Assignment-No-6">Assignment No.11</a><br>
-<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
-            <button>Github</button>
-            <button>View</button>
+            <h2>Assignment 11</h2>
+
+            <a href="https://github.com/amashamaduwanthi/Internet-Technologies-Assignment06.git"><button>Github</button></a>
+            <a href="https://amashamaduwanthi.github.io/Internet-Technologies-Assignment06/"><button>View</button></a>
+
         </div>
         <div class="box box-assignments">
             <img src="assests/stock-photo-project-manager-working-on-laptop-and-updating-tasks-and-milestones-progress-planning-with-gantt-2175846471.jpg" alt="Internet Technology" style="width: 100%; max-width: 300px;"><br>
-            <a href="#Assignment-No-6">Assignment No.12</a><br>
-<!--            <img src="assests/icons8-github-50.png" alt="Github" title="Github">-->
+            <h2>Assignment 12</h2>
+
             <button>Github</button>
             <a href="assests/Assignment-Demo/Calculator/index.html"><button>View</button></a>
         </div>
@@ -2496,15 +2303,21 @@
     <div class="box-container box-container-projects"data-aos="fade-left">
         <div class="box-project">
             <img src="assests/stock-photo-profile-side-view-of-his-he-nice-bearded-guy-wearing-checked-shirt-professional-expert-html-data-1451794139.jpg" alt="Project Ranweli" style="width: 100%; max-width: 300px;">
-            <h3>Project</h3>
+            <h2>Student Management</h2>
+            <a href="https://github.com/amashamaduwanthi/my-last-project.git"><button>Github</button></a>
+            <a href="assests/Assignment-Demo/Internet-Technologies-Assignment09/Index.html"><button>View</button></a>
         </div>
         <div class="box-project">
             <img src="assests/stock-photo-profile-side-view-of-his-he-nice-bearded-guy-wearing-checked-shirt-professional-expert-html-data-1451794139.jpg" alt="Project Ranweli" style="width: 100%; max-width: 300px;">
-            <h3>Project </h3>
+            <h2>Book Warm</h2>
+            <a href="https://github.com/amashamaduwanthi/ORM-Coursework.git"><button>Github</button></a>
+            <a href="https://amashamaduwanthi.github.io/ORM-Coursework/"><button>View</button></a>
         </div>
         <div class="box-project">
             <img src="assests/stock-photo-profile-side-view-of-his-he-nice-bearded-guy-wearing-checked-shirt-professional-expert-html-data-1451794139.jpg" alt="Project Ranweli" style="width: 100%; max-width: 300px;">
-            <h3>Project </h3>
+            <h2>Chat Application </h2>
+            <a href="https://github.com/amashamaduwanthi/Chat-Application.git"><button>Github</button></a>
+            <a href="https://amashamaduwanthi.github.io/Chat-Application/"><button>View</button></a>
         </div>
     </div>
 
@@ -2655,62 +2468,40 @@
 
     <br>
     <div id="c6">
-        <!--        <img id="m1" src="assests/WhatsApp%20Image%202024-05-07%20at%2014.25.02.png" title="pic1" alt="picture1" width="500px" height="500px">-->
+
 
     </div>
 
 </section>
 <footer>
-    <section id="contactme">
-        <hr>
-        <div id="div1">
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
 
-            <h2>Find Me</h2>
-            <hr>
-        </div>
-        <div id="f1">
-            <img src="assests/icons8-facebook-50.png"title="facebook"alt="facebook">
-            <a href="">Amasha Maduwanthi</a>
-        </div >
-        <br>
-        <div id="f2">
-            <img src="assests/icons8-whatsapp-50.png"title="whatsapp"alt="whatsapp">
-            <a href="">Amasha Maduwanthi</a>
-        </div>
-        <br>
-        <div id="f3">
-            <img src="assests/icons8-linked-in-50.png"title="linkedin"alt="linkedin">
-            <a href="">Amasha Maduwanthi</a>
-        </div>
-        <br>
-        <div id="f4">
-            <img src="assests/icons8-github-50.png"title="github"alt="github">
-            <a href="">amashamaduwanthi</a>
-        </div>
+    </div>
 
+    <ul class="social_icons">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+    </ul>
 
-        <div id="contact1">
-            <h2>Contact Info</h2>
-            <hr>
-        </div>
-        <div id="tel">
-            <h5>Tel</h5><p>+94740150848</p>
-        </div>
-        <div id="whatsapp">
-            <h5>Whatsapp</h5><p>+94740150848</p>
-        </div>
-        <div id="Email2">
-            <h5>Email</h5><p>amashamaduwanthi123@gmail.com</p>
-        </div>
-        <div id="final">
-            <p>All Rights Reserved -2024 Developed by Amasha Maduwanthi</p>
+    <ul class="social_menu">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#aboutme">About</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#skills">Skill</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
 
+    </ul>
+    <p> Ⓒ2024 All Rights Reserved-Developed By Amasha Maduwanthi</p>
 
-        </div>
-
-    </section>
 </footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="assests/js/Main.js"></script>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
