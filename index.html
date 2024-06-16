@@ -957,17 +957,68 @@
 
 
         @media all and (max-width: 768px){
-            .box-container-projects{
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-                gap: 8px;
+            .box-container-assignments>div>img {
+                width: 100%;
+                max-width: 200px;
+            }
+            .box-container-assignments > div {
+                background: #fff;
+                background-color: rgb(255, 255, 255);
+                padding: 20px;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                background-color: #212124;
+                height: 189px;
+                width: 68px;
             }
             .box-container-assignments{
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-                gap: 8px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+
+                gap: 130px;
             }
-            #projects{
-                height: 880px;
+            .box-container-assignments > div {
+                text-align: center;
+                font-size: 10px;
             }
+            #projects {
+                height: 1193px;
+                padding: 5px 9%;
+                padding-bottom: 10px;
+                padding-bottom: 30%;
+                font-family: "Poppins", sans-serif;
+                background-color: #747264;
+                color: white;
+            }
+
+                .box-container-assignments > div > a > button {
+                    line-height: 1.5;
+                    margin: 7px;
+                    height: 28px;
+                    width: 77px;
+                }
+            .box-container-projects > div {
+                background: #fff;
+                background-color: rgb(255, 255, 255);
+                padding: 8px;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                background-color: #212124;
+                height: 214px;
+                width: 116px;
+            }
+            .box-container-projects > div {
+                text-align: center;
+                font-size: 8px;
+            }
+            .box-container-projects{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+                gap: 130px;
+            }
+
         }
         @media all and (max-width: 1440px)and (min-width: 1250px) {
             .box-container-assignments > div {
@@ -990,10 +1041,20 @@
                 background-color: #747264;
                 color: white;
             }
+            .box-container-assignments > div > a > button {
+                line-height: 1.1;
+                margin: 6px;
+                height: 32px;
+                width: 65px;
+            }
+            .box-container-assignments > div {
+                text-align: center;
+                font-size: 12px;
+            }
         }
         @media (max-width: 450px){
             .box-container-assignments {
-                grid-template-columns: repeat(auto-fit, minmax(50px, 3fr));
+                grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
                 gap: 5px;
             }
             .box-container-projects {
@@ -1153,29 +1214,9 @@
                 right: 300px;
                 top: 3450px;
             }
-            #Skills>#s3>#im1{
-                height: 125px;
-                width: 125px;
-                left: 50px;
-                top: 3590px;
-            }
-            #Skills>#s3>#im2{
-                height: 125px;
-                width: 125px;
-                left: 180px;
-                top: 3800px;
-            }
-            #Skills>#s3>#im3{
-                height: 125px;
-                width: 125px;
-                left: 350px;
-                top: 3590px;
-            }
-            #Skills>#s3>#im4{
-                height: 125px;
-                width: 125px;
-                left: 550px;
-                top: 3800px;
+            .sub-box-skills {
+                padding: 8px;
+                text-align: center;
             }
         }
         @media all and (max-width: 1440px)and (min-width: 1250px) {
@@ -1238,35 +1279,12 @@
                 right: 159px;
                 top: 3487px;
             }
-            #Skills > #s2 > p {
-                font-size: 17px;
-                right: 168px;
-                top: 3516px;
+            .sub-box-skills img {
+                width: 47px;
+                height: 83px;
             }
-            #Skills > #s3 > #im1 {
-                height: 100px;
-                width: 100px;
-                left: 32px;
-                top: 3630px;
-            }
-            #Skills > #s3 > #im2 {
-                height: 100px;
-                width: 100px;
-                left: 41px;
-                top: 3798px;
-            }
-            #Skills > #s3 > #im3 {
-                height: 100px;
-                width: 100px;
-                left: 243px;
-                top: 3634px;
-            }
-            #Skills > #s3 > #im4 {
-                height: 100px;
-                width: 100px;
-                left: 256px;
-                top: 3800px;
-            }
+
+
         }
         #Gallery{
             background-color: #747264;
@@ -1440,84 +1458,7 @@
                 transform: translate(-75%);
             }
         }
-        @media all and (max-width: 768px){
-            #Gallery{
-                height: 880px;
-                width: 100vw;
-            }
-            #Gallery>#g1>h3{
-                font-size: 20px;
-                right: 304px;
-                top:4275px;
-            }
 
-            #Gallery > #imageview {
-                background-color: yellow;
-
-                width: 300px;
-                height: 300px;
-                top: 4450px;
-
-                left:10px;
-                position: absolute;
-                margin: auto;
-                overflow: hidden;
-            }
-            #imagesection>div{
-                width: 571px;
-                height: 400px;
-                background-color: yellow;
-            }
-            #imagesection {
-                display: flex;
-                width: 2640px;
-                height: 400px;
-                animation-name: ani;
-                animation-duration: 5s;
-                animation-iteration-count: infinite;
-            }
-            #Gallery > #imageview1 {
-                background-color: yellow;
-
-                width: 300px;
-                height: 300px;
-                top: 4450px;
-                right:10px;
-                position: absolute;
-                margin: auto;
-                overflow: hidden;
-            }
-            #imagesection1>div{
-                width: 571px;
-                height: 400px;
-                background-color: yellow;
-            }
-            #imagesection1 {
-                display: flex;
-                width: 2640px;
-                height: 400px;
-                animation-name: ani;
-                animation-duration: 5s;
-                animation-iteration-count: infinite;
-            }
-
-            #Gallery>#g1>hr{
-
-                right: 304px;
-                top:4320px;
-            }
-            #Gallery>#g2>p{
-                font-size: 12px;
-                left: 12px;
-                top:4380px;
-            }
-            #Gallery>#g3>p{
-                font-size: 12px;
-                right: 12px;
-                top:4380px;
-            }
-
-        }
         @media all and (max-width: 1440px)and (min-width: 1250px) {
             #Gallery{
                 height: 826px;
@@ -1525,7 +1466,7 @@
             #Gallery > #g1 > h3 {
                 position: absolute;
                 right: 653px;
-                top: 5447px;
+                top: 5545px;
                 font-size: 25px;
                 font-family: Serif;
                 color: #F3B95F;
@@ -1534,7 +1475,7 @@
             #Gallery > #g1 > hr {
                 position: absolute;
                 right: 610px;
-                top: 5520px;
+                top: 5608px;
                 color: #F3B95F;
                 width: 176px;
                 height: 2px;
@@ -1542,7 +1483,7 @@
             #Gallery > #g2 > p {
                 position: absolute;
                 left: 42px;
-                top: 5532px;
+                top: 5630px;
                 color: white;
                 font-size: 17px;
                 background-color: #F3B95F;
@@ -1552,14 +1493,14 @@
                 border: solid #F3B95F 15px;
                 width: 620px;
                 height: 346px;
-                top: 5601px;
+                top: 5730px;
                 right: 50px;
 
             }
             #Gallery > #g3 > p {
                 position: absolute;
                 right: 206px;
-                top: 5532px;
+                top: 5630px;
                 color: white;
                 font-size: 17px;
                 background-color: #F3B95F;
@@ -1574,42 +1515,102 @@
             #Gallery > #imageview {
                 width: 620px;
                 height: 346px;
-                top: 5601px;
+                top: 5730px;
                 right: 681px;
             }
         }
         @media all and (max-width: 768px){
+
             #Gallery > #g1 > h3 {
                 font-size: 20px;
-                right: 194px;
-                top: 4325px;
-            }
-            #Gallery > #g1 > hr {
-                right: 163px;
-                top: 4375px;
+                right: 315px;
+                top: 4450px;
             }
             #Gallery > #imageview1 {
                 background-color: yellow;
-                width: 300px;
-                height: 233px;
-                top: 4758px;
-                left: 52px;
+                width: 513px;
+                height: 263px;
+                top: 4982px;
+                left: 185px;
                 position: absolute;
                 margin: auto;
                 overflow: hidden;
+            }
+            #Gallery > #g2 > p {
+                position: absolute;
+                left: 150px;
+                top: 4522px;
+                color: white;
+                font-size: 13px;
+                background-color: #F3B95F;
             }
             #Gallery > #imageview {
                 background-color: yellow;
-                width: 300px;
-                height: 233px;
-                top: 4450px;
-                left: 52px;
+                width: 513px;
+                height: 263px;
+                top: 4603px;
+                left: 185px;
                 position: absolute;
                 margin: auto;
                 overflow: hidden;
             }
+            #Gallery > #g3 > p {
+                position: absolute;
+                right: 283px;
+                top: 4926px;
+                color: white;
+                font-size: 14px;
+                background-color: #F3B95F;
+            }
 
-
+        }
+        @media all and (max-width: 450px) {
+            #Gallery > #g1 > h3 {
+                font-size: 20px;
+                right: 207px;
+                top: 4404px;
+            }
+            #Gallery > #g2 > p {
+                position: absolute;
+                left: 19px;
+                top: 4490px;
+                color: white;
+                font-size: 13px;
+                background-color: #F3B95F;
+            }
+            #Gallery > #imageview {
+                background-color: yellow;
+                width: 398px;
+                height: 263px;
+                top: 4603px;
+                left: 11px;
+                position: absolute;
+                margin: auto;
+                overflow: hidden;
+            }
+            #imagesection > div {
+                width: 852px;
+                height: 500px;
+                background-color: yellow;
+            }
+            #Gallery > #g3 > p {
+                position: absolute;
+                right: 123px;
+                top: 4926px;
+                color: white;
+                font-size: 14px;
+                background-color: #F3B95F;
+            }
+            #Gallery > #imageview1 {
+                background-color: yellow;
+                width: 398px;
+                height: 263px;
+                top: 4982px;
+                left: 10px;
+                position: absolute;
+                margin: auto;
+                overflow: hidden;
+            }
         }
         #inquiries{
             width: 100vw;
@@ -1720,22 +1721,7 @@
                 right: 80px;
             }
         }
-        #inquiries>#c6>#m2{
-            position: absolute;
-            right: 173px;
-            top: 6567px;
-            height: 200px;
-            width: 200px;
 
-        }
-        #inquiries>#c6>#m3{
-            position: absolute;
-            right: 424px;
-            top: 6567px;
-            height: 200px;
-            width: 200px;
-
-        }
 
         /*#inquiries > #c6 :hover{*/
         /*    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
@@ -1749,17 +1735,17 @@
             #inquiries>#c1>h3{
                 font-size: 20px;
                 right: 304px;
-                top:5150px;
+                top: 5459px;
             }
-            #inquiries>#c1>hr{
-                right: 304px;
-                top:5200px;
+            #inquiries > #c1 > hr {
+                right: 280px;
+                top: 5504px;
             }
             #inquiries > #c2 > label {
                 position: absolute;
                 font-size: 20px;
                 left: 50px;
-                top: 5270px;
+                top: 5527px;
                 font-weight: bolder;
                 color: white;
             }
@@ -1767,7 +1753,7 @@
                 position: absolute;
                 font-size: 20px;
                 left: 71px;
-                top: 5675px;
+                top: 5874px;
                 font-weight: bolder;
                 color: black;
                 height: 50px;
@@ -1780,7 +1766,7 @@
                 position: absolute;
                 font-size: 20px;
                 left: 50px;
-                top: 5360px;
+                top: 5625px;
                 font-weight: bolder;
                 color: white;
             }
@@ -1788,7 +1774,7 @@
                 position: absolute;
                 font-size: 20px;
                 left: 50px;
-                top: 5450px;
+                top: 5708px;
                 font-weight: bolder;
                 color: white;
             }
@@ -1797,7 +1783,7 @@
                 width: 270px;
                 height: 42px;
                 right: 250px;
-                top: 5260px;
+                top: 5527px;
                 border-radius: 30px;
                 border: solid 3px #F3B95F;
             }
@@ -1806,7 +1792,7 @@
                 width: 270px;
                 height: 42px;
                 right: 250px;
-                top: 5360px;
+                top: 5625px;
                 border-radius: 30px;
                 border: solid 3px #F3B95F;
             }
@@ -1815,7 +1801,7 @@
                 width: 270px;
                 height: 42px;
                 right: 250px;
-                top: 5450px;
+                top: 5708px;
                 border-radius: 30px;
                 border: solid 3px #F3B95F;
             }
@@ -1825,23 +1811,23 @@
             #inquiries > #c6 {
                 position: absolute;
                 right: 168px;
-                top: 5119px;
-                height: 720px;
-                width: 599px;
+                top: 5358px;
+                height: 817px;
+                width: 561px;
             }
         }
         @media all and (max-width: 1440px)and (min-width: 1250px) {
             #inquiries > #c1 > h3 {
                 position: absolute;
                 right: 654px;
-                top: 6272px;
+                top: 6327px;
                 font-size: 25px;
 
             }
             #inquiries > #c1 > hr {
                 position: absolute;
                 right: 657px;
-                top: 6340px;
+                top: 6385px;
                 color: #F3B95F;
                 width: 176px;
                 height: 2px;
@@ -1916,18 +1902,18 @@
             #inquiries > #c1 > h3 {
                 font-size: 20px;
                 right: 193px;
-                top: 5200px;
+                top: 5405px;
             }
             #inquiries > #c1 > hr {
                 right: 179px;
-                top: 5239px;
+                top: 5455px;
             }
             #inquiries > #c2 > input {
                 position: absolute;
-                width: 172px;
-                height: 59px;
-                right: 73px;
-                top: 5284px;
+                width: 248px;
+                height: 36px;
+                right: 17px;
+                top: 5483px;
                 border-radius: 30px;
                 border: solid 3px #F3B95F;
             }
@@ -1935,33 +1921,33 @@
                 position: absolute;
                 font-size: 20px;
                 left: 50px;
-                top: 5303px;
+                top: 5488px;
                 font-weight: bolder;
                 color: white;
             }
             #inquiries > #c3 > input {
                 position: absolute;
-                width: 172px;
-                height: 59px;
-                right: 73px;
-                top: 5384px;
+                width: 254px;
+                height: 36px;
+                right: 17px;
+                top: 5563px;
                 border-radius: 30px;
                 border: solid 3px #F3B95F;
             }
-            #inquiries > #c3 > label {
+                #inquiries > #c3 > label {
                 position: absolute;
                 font-size: 20px;
                 left: 50px;
-                top: 5405px;
+                top: 5563px;
                 font-weight: bolder;
                 color: white;
             }
             #inquiries > #c4 > input {
                 position: absolute;
-                width: 172px;
-                height: 59px;
-                right: 75px;
-                top: 5478px;
+                width: 270px;
+                height: 42px;
+                right: 7px;
+                top: 5647px;
                 border-radius: 30px;
                 border: solid 3px #F3B95F;
             }
@@ -1969,21 +1955,21 @@
                 position: absolute;
                 font-size: 20px;
                 left: 50px;
-                top: 5500px;
+                top: 5661px;
                 font-weight: bolder;
                 color: white;
             }
             #inquiries > #c6 {
                 position: absolute;
                 right: 168px;
-                top: 5213px;
-                height: 720px;
-                width: 599px;
+                top: 5523px;
+                height: 649px;
+                width: 559px;
             }
             #inquiries > #c5 > button {
                 position: absolute;
-                left: 33px;
-                top: 5550px;
+                left: 124px;
+                top: 5792px;
             }
 
         }
@@ -2090,7 +2076,78 @@
                 background-position-x: 1000px;
             }
         }
+        @media all and (max-width: 1440px)and (min-width: 1250px) {
+            footer>.waves>#wave1{
+                z-index: 1000;
+                opacity: 0.5;
+                bottom: 10px;
+                animation: animateWave 4s linear infinite;
+                width: 1365px;
+            }
+            footer>.waves>#wave2{
+                z-index: 999;
+                opacity: 1;
+                bottom: 0;
+                animation: animateWave2 4s linear infinite;
+                width: 1365px;
+            }
+            footer{
+                position: absolute;
+                width: 93%;
+                background: rgb(187, 145, 102);
+                min-height: 100px;
+                padding: 20px 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+        @media all and (max-width: 768px){
+            footer > .waves > #wave1 {
+                z-index: 1000;
+                opacity: 0.5;
+                bottom: 78px;
+                animation: animateWave 4s linear infinite;
+                width: 739px;
+            }
+            footer > .waves > #wave2 {
+                z-index: 999;
+                opacity: 1;
+                bottom: 0;
+                animation: animateWave2 4s linear infinite;
+                width: 799px;
+            }
 
+        }
+        @media all and (max-width: 450px) {
+            footer > .waves > #wave1 {
+                z-index: 1000;
+                opacity: 0.5;
+                bottom: 78px;
+                animation: animateWave 4s linear infinite;
+                width: 453px;
+            }
+            footer {
+                position: absolute;
+                width: 79%;
+                background: rgb(187, 145, 102);
+                min-height: 100px;
+                padding: 20px 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            footer > .waves > #wave2 {
+                z-index: 999;
+                opacity: 1;
+                bottom: 0;
+                animation: animateWave2 4s linear infinite;
+                width: 455px;
+            }
+
+        }
 
 
     </style>
@@ -2118,13 +2175,13 @@
 </div>
 </header>
 <nav class="mobile-nav">
-<a href="#">Home</a>
-<a href="#">Aboutme</a>
-<a href="#">Qualifications</a>
-<a href="#">Projects</a>
-<a href="#">Skills</a>
-<a href="#">Gallery</a>
-<a href="#">Contactme</a>
+<a href="#Home">Home</a>
+<a href="#aboutme">Aboutme</a>
+<a href="#Qualifications">Qualifications</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#Gallery">Gallery</a>
+<a href="#inquiries">Contactme</a>
 </nav>
 
 <section id="Home">
@@ -2324,21 +2381,7 @@
 </section>
 
 
-<!--<section id="Skills">-->
-<!--    <div id="s1">-->
-<!--        <h3>My Skills</h3>-->
-<!--        <hr>-->
-<!--    </div>-->
-<!--    <div id="s2">-->
-<!--        <p>Technologies I've worked</p>-->
-<!--    </div>-->
-<!--    <div id="s3">-->
-<!--        <img id="im1" src="assests/Java_logo-414x700.png" title="" alt="" width="150px" height="150px" data-aos="flip-left">-->
-<!--        <img id="im2" src="assests/1499794875MySQL-logo-png-transparent.png" title="" alt="" width= "150px" height="150px"data-aos="flip-left">-->
-<!--        <img id="im3" src="assests/HTML_Color_Black.png" title="" alt="" width="150px" height="150px"data-aos="flip-right">-->
-<!--        <img id="im4" src="assests/icons8-css-filetype-50.png" title="" alt="" width="150px" height="150px"data-aos="flip-right">-->
-<!--    </div>-->
-<!--</section>-->
+
 <section id="skills">
 
     <h2>Skills</h2>
@@ -2376,33 +2419,7 @@
 
     </div>
 </section>
-<!--<section id="Skills">-->
-<!--<div class="container">-->
-<!--    <h1 class="heading">Skills</h1>-->
-<!--    <div class="box-container">-->
-<!--        <div class="box">-->
-<!--            <img src="assests/Java_logo-414x700.png">-->
-<!--            <h3>HTML 5</h3>-->
-<!--            <a href="#" class="btn">read more</a>-->
-<!--        </div>-->
-<!--        <div class="box">-->
-<!--            <img src="assests/HTML_Color_Black.png">-->
-<!--            <h3>HTML 5</h3>-->
-<!--            <a href="#" class="btn">read more</a>-->
-<!--        </div>-->
-<!--        <div class="box">-->
-<!--            <img src="assests/1499794875MySQL-logo-png-transparent.png">-->
-<!--            <h3>HTML 5</h3>-->
-<!--            <a href="#" class="btn">read more</a>-->
-<!--        </div>-->
-<!--        <div class="box">-->
-<!--            <img src="assests/icons8-css-filetype-50.png">-->
-<!--            <h3>HTML 5</h3>-->
-<!--            <a href="#" class="btn">read more</a>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<!--    </section>-->
+
 <section id="Gallery">
     <div id="g1">
         <h3>Gallery</h3>
@@ -2417,12 +2434,7 @@
             <div></div>
         </section>
     </div>
-    <!--    <div>-->
-    <!--        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.01%20(1).jpeg" title="pic1" alt="picture1" width="350px" height="250px">-->
-    <!--        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.01.jpeg" title="pic2" alt="picture2" width="350px" height="250px">-->
-    <!--        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.02%20(1).jpeg" title="pic3" alt="picture3" width="350px" height="250px">-->
-    <!--        <img src="assests/WhatsApp%20Image%202024-02-11%20at%2008.15.02.jpeg" title="pic1" alt="picture1" width="350px" height="250px">-->
-    <!--    </div>-->
+
     <div id="g3"><p>Fresher's night 2023 Enjoyable Moments</p></div>
     <div id="imageview1">
         <section id="imagesection1">
